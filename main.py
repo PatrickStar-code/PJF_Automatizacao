@@ -18,7 +18,7 @@ PASSWORD = os.getenv("PASSWORD", "")
 print(f"Login: {USER}", flush=True)
 print(f"Senha: {PASSWORD}", flush=True)
 
-URL = "https://juizdefora-mg-tst.vivver.com/login?page=%2Fdesktop&conta=SMS"
+URL = "https://juizdefora-mg-tst.vivver.com/login"
 
 CSV_PATH = "Book(Planilha1).csv"
 WAIT_TIME = 10
@@ -54,7 +54,7 @@ def login(driver, espera):
 
     # Espera campo de login
     campo_conta = espera.until(EC.presence_of_element_located((By.ID, "conta")))
-    if(campo_conta.get_attribute("value") != "" and campo_conta is None):
+    if(campo_conta.get_attribute("value") == "" or campo_conta is None):
         campo_conta.send_keys(USER)
     
     campo_senha = espera.until(EC.presence_of_element_located((By.NAME, "password")))
