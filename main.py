@@ -2,7 +2,7 @@ from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait,Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from dotenv import load_dotenv
@@ -150,8 +150,18 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
             time.sleep(0.5)
             print("-> Esperando botão pesquisar")
             btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
-            btn_search.click()
-            print("-> Botão pesquisar clicado")            
+            action.move_to_element(btn_search).click().perform()
+            print("-> Botão pesquisar clicado")
+            time.sleep(1)
+
+            select_element = espera.until(
+                EC.visibility_of_element_located(
+                    (By.CSS_SELECTOR, "#esf_area_profissional_datatable_length select")
+                )
+            )
+            select = Select(select_element)
+            select.select_by_value("100")
+            
             verificar_medico(driver=driver,espera=espera,action=action,dados=team["members"],temp_team=temp_team)
   
 
@@ -256,7 +266,6 @@ def verificar_medico(driver, espera, action, dados,temp_team):
                 print(f"O médico {pessoa} não está mais no CNES — deletando...")
                 deletar_medico_equipe(espera=espera,medico=pessoa,actions=action,temp_team=temp_team)
 
-        #Problema acontece aqui
         print("Saindo da tabela")
         cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
         action.move_to_element(cancel).click().perform()
@@ -321,7 +330,6 @@ def adicionar_medico_equipe(driver,espera,action,pessoa):
         btn_search = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_search")))
         action.move_to_element(btn_search).click().perform()
         print("-> Botão pesquisar clicado")
-
         time.sleep(1)
 
 def deletar_medico_equipe(espera,medico,actions,temp_team):
@@ -371,6 +379,7 @@ def deletar_medico_equipe(espera,medico,actions,temp_team):
 
             btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
             actions.move_to_element(btn_search).click().perform()
+            time.sleep(1)
         except Exception as e:
             print(e)
 
