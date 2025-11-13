@@ -41,7 +41,7 @@ def carregar_dados_times(caminho):
             if "teams" in leitor:
                 dados = leitor["teams"]
             else:
-                dados = leitor  # Caso já seja uma lista
+                dados = leitor  
     except FileNotFoundError:
         print(f"[ERRO] Arquivo JSON não encontrado: {caminho}")
         dados = []
@@ -87,20 +87,10 @@ def login(driver, espera):
 
 def abrir_times(driver, espera, action):
     """Abre a área de times e clica no area Profissional"""
-    abrir_formulario(driver=driver,espera=espera,action=action,shortcut_id="shortcut_esf_area",iframe="iframe_esf_area")
-
-    print("➡️ Esperando o botão 'Área profissional' aparecer...")
-    times = espera.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(@href, '/esf/area_profissional')]")))
-
-    print("➡️ Elemento clicável — tentando clicar")
-    action.click(times).perform()
-    print("✅ Elemento Clicado")
-
-    print("➡️ Voltando ao Html Principal")
-    driver.switch_to.default_content()
+    abrir_formulario(driver=driver,espera=espera,action=action,shortcut_id="shortcut_esf_area_profissional")
 
 
-def abrir_formulario(driver,espera,action,shortcut_id,iframe):
+def abrir_formulario(driver,espera,action,shortcut_id):
     """Abre a área de times"""
     print("➡️ Esperando o shortcut...")
     shortcut = espera.until(EC.element_to_be_clickable((By.ID, shortcut_id)))
@@ -109,15 +99,12 @@ def abrir_formulario(driver,espera,action,shortcut_id,iframe):
     action.double_click(shortcut).perform()
     print("✅ Duplo clique executado")
 
-    print("➡️ Mudando para o iframe 'iframe_esf_area'")
-    iframe = espera.until(EC.presence_of_element_located((By.ID, iframe)))
-    driver.switch_to.frame(iframe)
-    print("✅ Contexto alterado para iframe")
 
 
-def pesquisar_unidade_por_area(driver, espera, action, dados):
+
+def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
     print("➡️ Trocando para o iFrame")
-    iframe = espera.until(EC.presence_of_element_located((By.ID, "iframe_esf_area_profissional")))
+    iframe = espera.until(EC.visibility_of_element_located((By.ID, iframe)))
     driver.switch_to.frame(iframe)
     print("✅ Troca bem sucedida")
 
@@ -161,7 +148,10 @@ def pesquisar_unidade_por_area(driver, espera, action, dados):
             )
 
             time.sleep(0.5)
-            driver.find_element(By.TAG_NAME, "body").send_keys(Keys.CONTROL, 'l')
+            print("-> Esperando botão pesquisar")
+            btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
+            btn_search.click()
+            print("-> Botão pesquisar clicado")            
             verificar_medico(driver=driver,espera=espera,action=action,dados=team["members"],temp_team=temp_team)
   
 
@@ -171,36 +161,58 @@ def inserir( espera, action, id_campo, valor,campo_id,controle = False):
     try:
         print(f"➡️ Esperando o campo '{campo_id}' ser clicável")
         campo_id_element = espera.until(EC.element_to_be_clickable((By.ID,campo_id)))
-        time.sleep(0.2)
+        time.sleep(0.4)
         campo_id_element.clear()
-        time.sleep(0.2)
+        time.sleep(0.4)
         print(f"✅ Campo {campo_id} clicado")
 
         print(f"➡️ Esperando o campo '{id_campo}' ser clicável")
         campo = espera.until(EC.visibility_of_element_located((By.ID, id_campo)))
         action.move_to_element(campo).click().perform()
-        time.sleep(0.2)
+        time.sleep(0.4)
         print("✅ Campo select aberto")
 
         print("Enviando valor")
         action.send_keys(valor).perform()
-        time.sleep(0.2)
+        time.sleep(0.5)
         print("Valor enviado")
 
         if(controle):
+            texto = campo.find_element(By.CSS_SELECTOR, ".select2-chosen").text.strip()
+
+            if texto != valor:
+                print("🔄 Valor diferente do atual — tentando selecionar nova opção...")
+
             try:
                 espera.until(EC.visibility_of_element_located((By.ID, "select2-drop")))
+                print("📋 Dropdown visível — buscando opções...")
 
-                primeiro_item = espera.until(EC.visibility_of_element_located((
+                opcoes = espera.until(EC.presence_of_all_elements_located((
                     By.CSS_SELECTOR,
                     "#select2-drop ul.select2-results li.select2-result-selectable"
                 )))
 
-                primeiro_item.click()
-            except Exception as e:
-                print("Não foi possivel clicar no primeiro item da li")
+                clicou = False
+                for opcao in opcoes:
+                    if valor.lower() in opcao.text.lower():
+                        opcao.click()
+                        clicou = True
+                        print(f"✅ Clicado em: {opcao.text}")
+                        break
 
+                if not clicou:
+                    print(f"❌ Opção '{valor}' não encontrada na lista.")
 
+            except TimeoutException:
+                # Se o dropdown não aparecer, pode ser que o campo tenha sido preenchido automaticamente
+                texto_atual = campo.find_element(By.CSS_SELECTOR, ".select2-chosen").text.strip()
+                if texto_atual == valor:
+                    print("✅ O valor foi preenchido automaticamente (sem abrir o dropdown).")
+                else:
+                    print(f"⚠️ O dropdown não apareceu e o valor ainda não é '{valor}'.")
+        else:
+            print(f"✅ '{valor}' já estava selecionado.")
+            
         print("✅ Inserção concluída")
         time.sleep(0.3)
     except Exception as e:
@@ -214,31 +226,44 @@ def verificar_medico(driver, espera, action, dados,temp_team):
     linhas = tbody.find_elements(By.TAG_NAME, "tr")
     valores = list()
 
+ 
+
     for linha in linhas:
         colunas = linha.find_elements(By.TAG_NAME, "td")
-        valores.append(colunas[9].text)
-
-    for cnes in dados:
-        nome = cnes["name"]
-        encontrado = any(fuzz.ratio(nome, pessoa) > 80 for pessoa in valores)
-        
-        if encontrado:
-            print(f"O médico {nome} está cadastrado corretamente")
-        else:
-            print(f"O médico {nome} não está na equipe — adicionando...")
-            adicionar_medico_equipe(driver=driver,espera=espera,action=action,pessoa=nome)
-
-    for pessoa in valores:
-        encontrado = any(fuzz.ratio(pessoa, cnes["name"]) > 80 for cnes in dados)
+        if(colunas[0].text == "Não foram encontrados resultados"):
+            print("Equipe sem medicos")
+            break
+        valores.append(colunas[9].text) 
     
-        if not encontrado:
-            print(f"O médico {pessoa} não está mais no CNES — deletando...")
-            deletar_medico_equipe(espera=espera,medico=pessoa,actions=action,temp_team=temp_team)
+   
+    if len(valores) == 0:
+        print("Fui para o if")
+        for cnes in dados:
+            adicionar_medico_equipe(driver=driver,espera=espera,action=action,pessoa=cnes["name"])
 
-    print("Saindo da tabela")
-    cancel = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_cancel"
-                )))
-    cancel.click()
+    else:
+        for cnes in dados:
+            nome = cnes["name"]
+            encontrado = any(fuzz.ratio(nome, pessoa) > 80 for pessoa in valores)
+            
+            if encontrado:
+                print(f"O médico {nome} está cadastrado corretamente")
+            else:
+                print(f"O médico {nome} não está na equipe — adicionando...")
+                adicionar_medico_equipe(driver=driver,espera=espera,action=action,pessoa=nome)
+
+        for pessoa in valores:
+            encontrado = any(fuzz.ratio(pessoa, cnes["name"]) > 80 for cnes in dados)
+        
+            if not encontrado:
+                print(f"O médico {pessoa} não está mais no CNES — deletando...")
+                deletar_medico_equipe(espera=espera,medico=pessoa,actions=action,temp_team=temp_team)
+
+        #Problema acontece aqui
+        print("Saindo da tabela")
+        cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
+    driver.execute_script("arguments[0].click();", cancel)
+
 
 
 
@@ -271,36 +296,33 @@ def adicionar_medico_equipe(driver,espera,action,pessoa):
         print("-> Botão salvar clicado")
         time.sleep(1)
 
-        try:
-            erro = driver.find_element(By.CSS_SELECTOR, "nav.fwk-navbar-danger")
+        erro = driver.find_element(By.CSS_SELECTOR, "nav.fwk-navbar-danger")
 
-
-            if erro.is_displayed():
-                matrix_medico_erro.append()
-                print(f"Erro ao cadastrar Medico {pessoa} por erro desconhecido ")
-        except:
-            print("Barra de erro não encontrada")
+        if erro.is_displayed():
+            matrix_medico_erro.append()
+            
         
  
 
     except Exception as e:
         print(f"Não foi possivel cadastrar o medico {pessoa}")
         matrix_medico_erro.append(pessoa)
-        body = driver.find_element(By.TAG_NAME, "body")
+        
+        time.sleep(1)
+        body = espera.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         body.click()
 
-        time.sleep(1)
-    finally:        
+
         print("-> Cliquei no cancel")
-        btn_cancel = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_cancel")))
-        btn_cancel.click()
+        btn_cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
+        driver.execute_script("arguments[0].click();", btn_cancel)
         print("-> Cancel Bem Sucedido")
 
         time.sleep(2)
     
         print("-> Esperando botão pesquisar")
-        btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
-        btn_search.click()
+        btn_search = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_search")))
+        driver.execute_script("arguments[0].click();", btn_search)
         print("-> Botão pesquisar clicado")
 
         time.sleep(1)
@@ -367,7 +389,7 @@ def main():
     if not dados:
         print("Nenhum dado carregado no JSON.")
         return
-    
+
 
     driver = webdriver.Edge()
     espera = WebDriverWait(driver, WAIT_TIME)
@@ -376,7 +398,7 @@ def main():
     try:
         login(driver, espera)
         abrir_times(driver, espera, action)
-        pesquisar_unidade_por_area(driver,espera,action,dados)
+        pesquisar_unidade_por_area(driver,espera,action,dados,"iframe_esf_area_profissional")
 
     except Exception as e:
         print(f"[ERRO] Ocorreu um erro: {e}")
