@@ -166,18 +166,15 @@ def inserir( espera, action, id_campo, valor,campo_id,controle = False):
         time.sleep(0.4)
         print(f"✅ Campo {campo_id} clicado")
 
+
+
         print(f"➡️ Esperando o campo '{id_campo}' ser clicável")
         campo = espera.until(EC.visibility_of_element_located((By.ID, id_campo)))
-        action.move_to_element(campo).click().perform()
-        time.sleep(0.4)
-        print("✅ Campo select aberto")
-
-        print("Enviando valor")
-        action.send_keys(valor).perform()
+        action.move_to_element(campo).click().send_keys(valor).perform()
         time.sleep(0.5)
         print("Valor enviado")
-
-        if(controle):
+        
+        if controle:
             texto = campo.find_element(By.CSS_SELECTOR, ".select2-chosen").text.strip()
 
             if texto != valor:
@@ -262,7 +259,7 @@ def verificar_medico(driver, espera, action, dados,temp_team):
         #Problema acontece aqui
         print("Saindo da tabela")
         cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
-    driver.execute_script("arguments[0].click();", cancel)
+        action.move_to_element(cancel).click().perform()
 
 
 
@@ -271,7 +268,7 @@ def adicionar_medico_equipe(driver,espera,action,pessoa):
     try:
         print("-> Cliquei no cancel")
         btn_cancel = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_cancel")))
-        btn_cancel.click()
+        action.move_to_element(btn_cancel).click().perform()
         print("-> Cancel Bem Sucedido")
 
 
@@ -279,7 +276,7 @@ def adicionar_medico_equipe(driver,espera,action,pessoa):
 
         print("-> Esperando o botão inserir")
         btn_inserir = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_insert")))
-        btn_inserir.click()
+        action.move_to_element(btn_inserir).click().perform()
         print("-> Botão inserir clicado")
 
         time.sleep(1)
@@ -292,7 +289,7 @@ def adicionar_medico_equipe(driver,espera,action,pessoa):
         espera.until(EC.invisibility_of_element_located((By.ID, "select2-drop-mask")))
         print("-> Esperando botão salvar")
         btn_salvar = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_save")))
-        btn_salvar.click()
+        action.move_to_element(btn_salvar).click().perform()
         print("-> Botão salvar clicado")
         time.sleep(1)
 
@@ -315,14 +312,14 @@ def adicionar_medico_equipe(driver,espera,action,pessoa):
 
         print("-> Cliquei no cancel")
         btn_cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
-        driver.execute_script("arguments[0].click();", btn_cancel)
+        action.move_to_element(btn_cancel).click().perform()
         print("-> Cancel Bem Sucedido")
 
         time.sleep(2)
     
         print("-> Esperando botão pesquisar")
         btn_search = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_search")))
-        driver.execute_script("arguments[0].click();", btn_search)
+        action.move_to_element(btn_search).click().perform()
         print("-> Botão pesquisar clicado")
 
         time.sleep(1)
@@ -333,10 +330,10 @@ def deletar_medico_equipe(espera,medico,actions,temp_team):
         actions.double_click(td).perform()
         time.sleep(1)
         btn_excluir = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_delete")))
-        btn_excluir.click()
+        actions.move_to_element(btn_excluir).click().perform()
         time.sleep(1)
         btn_confirmar_exclusao = espera.until(EC.visibility_of_element_located((By.CSS_SELECTOR,".modal-footer .btn.btn-primary.btn-lg")))
-        btn_confirmar_exclusao.click()
+        actions.move_to_element(btn_confirmar_exclusao).click().perform()
         time.sleep(1)
 
         try:
@@ -373,7 +370,7 @@ def deletar_medico_equipe(espera,medico,actions,temp_team):
             )
 
             btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
-            btn_search.click()
+            actions.move_to_element(btn_search).click().perform()
         except Exception as e:
             print(e)
 
