@@ -22,7 +22,7 @@ PASSWORD = os.getenv("PASSWORD", "")
 
 
 
-URL = "https://juizdefora-mg-tst.vivver.com/login"
+URL = "https://juizdefora-mg.vivver.com/login"
 
 JSON_PATH = "teams_output.json"
 WAIT_TIME = 10
@@ -32,6 +32,7 @@ markdown_text = input_file.read_text(encoding="utf-8")
 
 matrix_medico_erro = []
 area_atual = None
+
 # ======== FUNÇÕES AUXILIARES ========
 
 def carregar_dados_times(caminho):
@@ -147,7 +148,7 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
                 controle=True
             )
 
-            time.sleep(0.5)
+            time.sleep(1)
             print("-> Esperando botão pesquisar")
             btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
             action.move_to_element(btn_search).click().perform()
@@ -171,9 +172,9 @@ def inserir( espera, action, id_campo, valor,campo_id,controle = False):
     try:
         print(f"➡️ Esperando o campo '{campo_id}' ser clicável")
         campo_id_element = espera.until(EC.element_to_be_clickable((By.ID,campo_id)))
-        time.sleep(0.4)
+        time.sleep(1)
         campo_id_element.clear()
-        time.sleep(0.4)
+        time.sleep(1)
         print(f"✅ Campo {campo_id} clicado")
 
 
@@ -181,7 +182,7 @@ def inserir( espera, action, id_campo, valor,campo_id,controle = False):
         print(f"➡️ Esperando o campo '{id_campo}' ser clicável")
         campo = espera.until(EC.visibility_of_element_located((By.ID, id_campo)))
         action.move_to_element(campo).click().send_keys(valor).perform()
-        time.sleep(0.5)
+        time.sleep(1)
         print("Valor enviado")
         
         if controle:
@@ -221,7 +222,7 @@ def inserir( espera, action, id_campo, valor,campo_id,controle = False):
             print(f"✅ '{valor}' já estava selecionado.")
             
         print("✅ Inserção concluída")
-        time.sleep(0.3)
+        time.sleep(1)
     except Exception as e:
         print(f"Não foi impossivel inserir o campo  {id_campo} devido {e}")
 
@@ -244,11 +245,18 @@ def verificar_medico(driver, espera, action, dados,temp_team):
     
    
     if len(valores) == 0:
-        print("Fui para o if")
         for cnes in dados:
             adicionar_medico_equipe(driver=driver,espera=espera,action=action,pessoa=cnes["name"])
 
     else:
+        
+        for pessoa in valores:
+            encontrado = any(fuzz.ratio(pessoa, cnes["name"]) > 80 for cnes in dados)
+        
+            if not encontrado:
+                print(f"O médico {pessoa} não está mais no CNES — deletando...")
+                deletar_medico_equipe(espera=espera,medico=pessoa,actions=action,temp_team=temp_team)
+
         for cnes in dados:
             nome = cnes["name"]
             encontrado = any(fuzz.ratio(nome, pessoa) > 80 for pessoa in valores)
@@ -259,12 +267,7 @@ def verificar_medico(driver, espera, action, dados,temp_team):
                 print(f"O médico {nome} não está na equipe — adicionando...")
                 adicionar_medico_equipe(driver=driver,espera=espera,action=action,pessoa=nome)
 
-        for pessoa in valores:
-            encontrado = any(fuzz.ratio(pessoa, cnes["name"]) > 80 for cnes in dados)
-        
-            if not encontrado:
-                print(f"O médico {pessoa} não está mais no CNES — deletando...")
-                deletar_medico_equipe(espera=espera,medico=pessoa,actions=action,temp_team=temp_team)
+
 
         print("Saindo da tabela")
         cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
