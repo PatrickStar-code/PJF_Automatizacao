@@ -3,60 +3,73 @@ import json
 from pathlib import Path
 
 input_file = Path("output.md")
-markdown_text = input_file.read_text(encoding="utf-8")
+text = input_file.read_text(encoding="utf-8")
 
-team_blocks = re.split(r'\*\*Estabelecimento\s*:\*\*', markdown_text)
 teams = []
 
-team_pattern = re.compile(
-    r'CNES\s*:\s*(\d+)\s*-\s*([^\n]+)\n'     # ← agora pega só até o fim da linha
-    r'.*?70\s*-\s*(.*?)\s+INE\s*:\s*(\d+)\s*/\s*\d+\s*-\s*(.*?)\s+\*\*Munic',
-    re.DOTALL
-)
+# Separar blocos de equipe
+blocks = re.split(r'\n70\s*-\s*', text)
+blocks = blocks[1:]  # remove o que vem antes da primeira equipe
 
-member_pattern = re.compile(
-    r'([A-ZÀ-Ú\s]+?)(\d{6})\s*-\s*([A-ZÀ-Ú\s]+(?:DE|DA|DO|DAS|DOS)?[A-ZÀ-Ú\s]*)\s+'
-    r'(\d+)\s+(\d+)\s+(\d+)\s+([\d/]+)',
-    re.MULTILINE
-)
+for block in blocks:
+    block = "70 - " + block  # restaura início removido no split
 
-for block in team_blocks:
-    if not block.strip():
+    # --- EXTRAI CABEÇALHO ---
+    header_regex = re.compile(
+        r'70\s*-\s*(.+?)\s*\n'                       # Tipo da equipe
+        r'.*?INE\s*:\s*(\d+)\s*/\s*\d+\s*-\s*(.+?)\s*\n'  # INE / área
+        r'.*?CNES\s*:\s*(\d+)\s*-\s*(.+?)\n',        # CNES + unidade
+        re.DOTALL
+    )
+
+    h = header_regex.search(block)
+    if not h:
         continue
 
-    team_match = team_pattern.search(block)
-    if not team_match:
-        continue
+    tipo, ine, area, cnes, unidade = h.groups()
 
-    code, unit, type_, ine, area = team_match.groups()
-
-    if " - " in area:
-        area = area.split(" - ", 1)[1].strip()
-
-    unit = unit.strip()
-
+    # --- EXTRAI MEMBROS ---
     members = []
-    for m in member_pattern.finditer(block):
+
+    member_regex = re.compile(
+        r'\|\s*([A-ZÀ-Ú\s]+?)\s*\|\s*'      # Nome
+        r'(\d{6})\s*-\s*([A-ZÀ-Ú\s]+?)\s*\|\s*'  # CBO + Função
+        r'(\d+)\s*\|\s*\d+\s*\|\s*\d+\s*\|\s*'   # CH 1 (os outros ignorados)
+        r'(\d{2}/\d{2}/\d{4})',                 # Data início
+        re.MULTILINE
+    )
+
+    for m in member_regex.finditer(block):
+        name = m.group(1).strip()
+        cbo = m.group(2).strip()
+        role = m.group(3).strip()
+        hours = int(m.group(4))
+        start_date = m.group(5).strip()
+
         members.append({
-            "name": m.group(1).strip(),
-            "cbo": m.group(2).strip(),
-            "role": m.group(3).strip(),
-            "hours": int(m.group(4)),
-            "microarea": int(m.group(5)),
-            "other": int(m.group(6)),
-            "start_date": m.group(7).strip()
+            "name": name,
+            "cbo": cbo,
+            "role": role,
+            "hours": hours,
+            "microarea": 0,
+            "other": 0,
+            "start_date": start_date
         })
 
     teams.append({
-        "name": type_.strip(),
+        "name": tipo.strip(),
         "ine": ine.strip(),
-        "unid": unit,   # agora ficará só “UBS GRAMA”
+        "unid": unidade.strip(),
         "area": area.strip(),
         "members": members
     })
 
-output = {"teams": teams}
-output_file = Path("teams_output.json")
-output_file.write_text(json.dumps(output, indent=4, ensure_ascii=False), encoding="utf-8")
 
-print(f"✅ {len(teams)} equipes extraídas e salvas em {output_file.resolve()}")
+# --- SALVA JSON ---
+output = {"teams": teams}
+Path("teams_output.json").write_text(
+    json.dumps(output, indent=4, ensure_ascii=False),
+    encoding="utf-8"
+)
+
+print(f"✅ Arquivo gerado! {len(teams)} equipes salvas em teams_output.json")
