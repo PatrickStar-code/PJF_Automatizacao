@@ -1,769 +1,6 @@
 {
     "teams": [
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471930",
-            "unid": "UBS GRAMA",
-            "area": "GRAMA I",
-            "members": [
-                {
-                    "name": "DIOGO JOSE DA SILVA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "VINICIO JOSE VICENTE EZEQUIEL",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "02/07/2025"
-                },
-                {
-                    "name": "CLAUDILENE ELIANE DO CARMO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "RITA DE CASSIA QUEIROZ LAMEIRAO",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471973",
-            "unid": "UBS GRAMA",
-            "area": "GRAMA V",
-            "members": [
-                {
-                    "name": "LAURINDO ALVES RODRIGUES",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "DARLAN MELQUIADES TOLEDO",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2025"
-                },
-                {
-                    "name": "SOLANGE GOMES VIEIRA",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "02/10/2025"
-                },
-                {
-                    "name": "PALOMA MAYER MARTINS FONSECA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "04/07/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471949",
-            "unid": "UBS GRAMA",
-            "area": "GRAMA II",
-            "members": [
-                {
-                    "name": "THAIS ANDRESSA OLINDO SILVA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "REGIANE SILVA PAULINO",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/11/2025"
-                },
-                {
-                    "name": "CARLA APARECIDA BATISTA MIRANDA",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "18/07/2025"
-                },
-                {
-                    "name": "LUIZ MARCELO CAMPOS SILVA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "19/08/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471965",
-            "unid": "UBS GRAMA",
-            "area": "GRAMA IV",
-            "members": [
-                {
-                    "name": "DANIELLE SIQUEIRA FELIPE DE SOUZA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "PRISCILA ELLEN JANNUZZI",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2025"
-                },
-                {
-                    "name": "FLAVIA JANAINA DA SILVA LAURO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "25/09/2025"
-                },
-                {
-                    "name": "NICOLE DE ALMEIDA MULLER",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "28/08/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471957",
-            "unid": "UBS GRAMA",
-            "area": "GRAMA III",
-            "members": [
-                {
-                    "name": "SANDRA REGINA GONCALVES DE",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "NATALIA APARECIDA DOS SANTOS",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "11/09/2025"
-                },
-                {
-                    "name": "NATHALIE OLIVEIRA MAFALDO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/09/2025"
-                },
-                {
-                    "name": "TOMAS MACHADO SCHRODER DUTRA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "28/08/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471647",
-            "unid": "UBS BENFICA",
-            "area": "ESF BENFICA I",
-            "members": [
-                {
-                    "name": "TAINARA TOLEDO DE OLIVEIRA SOUZA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "ANA PAULA DE ASSIS",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "17/09/2025"
-                },
-                {
-                    "name": "FABIANA ROCHA DA SILVA MUNCK",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "15/04/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471698",
-            "unid": "UBS BENFICA",
-            "area": "ESF BENFICA V",
-            "members": [
-                {
-                    "name": "KARINA KELLY AMARO BENTO",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "02/01/2025"
-                },
-                {
-                    "name": "FERNANDA MEIRELLES VENTURA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "06/11/2025"
-                },
-                {
-                    "name": "MARIANA BRANDAO SAMPAIO",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "30/09/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471655",
-            "unid": "UBS BENFICA",
-            "area": "ESF BENFICA II",
-            "members": [
-                {
-                    "name": "THEO FABIO PIRES PINTO",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "NICOLAS LOSCHI DO VALE",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "17/09/2025"
-                },
-                {
-                    "name": "BEATRIZ SCALDINI",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/11/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471701",
-            "unid": "UBS BENFICA",
-            "area": "ESF BENFICA VI",
-            "members": [
-                {
-                    "name": "SAULO GARCIA DAMASCENO",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/10/2024"
-                },
-                {
-                    "name": "FRANCIANE DE OLIVEIRA MARTINS",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "11/08/2025"
-                },
-                {
-                    "name": "JOAO VITOR BELIZARIO ROCHA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "19/02/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471671",
-            "unid": "UBS BENFICA",
-            "area": "ESF BENFICA IV",
-            "members": [
-                {
-                    "name": "ANDRE OLIVEIRA GOMES",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "29/08/2024"
-                },
-                {
-                    "name": "LUCIANA MADALENA MARCOLINO",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "30/09/2025"
-                },
-                {
-                    "name": "LUIS FELIPE PINTO BARACHO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "30/09/2025"
-                },
-                {
-                    "name": "GIOVANNA BALBI LIMA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "30/09/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471663",
-            "unid": "UBS BENFICA",
-            "area": "ESF BENFICA III",
-            "members": [
-                {
-                    "name": "ROSILENE ALVES DA SILVA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "VANESSA FAVERO DA SILVA",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "17/07/2025"
-                },
-                {
-                    "name": "JOELMA ELIZABETH PORTES DOS REIS",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "THAYNAH CANONICO LOPES",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "19/02/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471728",
-            "unid": "UBS BENFICA",
-            "area": "ESF BENFICA VII",
-            "members": [
-                {
-                    "name": "CRISTIANE GOMES DE SOUZA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/10/2024"
-                },
-                {
-                    "name": "ROSIMEIRE MARIA DE ALMEIDA CAMPOS",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "21/07/2025"
-                },
-                {
-                    "name": "CELESTE LUIZA DA SILVA",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "17/09/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0000252670",
-            "unid": "UBS BENFICA",
-            "area": "PSF NOVA BENFICA",
-            "members": [
-                {
-                    "name": "LUCIENE CRISTINA DA SILVA SANTOS",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "19/08/2024"
-                },
-                {
-                    "name": "SOLANGE DEMETRIO PEREIRA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/10/2024"
-                },
-                {
-                    "name": "TATIANE GOMES PINHEIRO",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "19/08/2024"
-                },
-                {
-                    "name": "THAVILA APARECIDA PEREIRA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/10/2024"
-                },
-                {
-                    "name": "JUANILIO RODOLFO DIONISIO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/10/2025"
-                },
-                {
-                    "name": "ADRIELE MEYER PIRES FEITOSA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "28/10/2025"
-                },
-                {
-                    "name": "MARIA MARTHA GONCALVES LEWER",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "19/08/2024"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0000252239",
-            "unid": "UBS HUMAITA",
-            "area": "HUMAITA",
-            "members": []
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0000252727",
-            "unid": "UBS NOVA ERA",
-            "area": "NOVA ERA",
-            "members": [
-                {
-                    "name": "LIVIA CRISTINA SILVA DO CARMO",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "LUANA TAVARES FLAVIO DE OLIVEIRA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "17/01/2014"
-                },
-                {
-                    "name": "ROSELI GOMES VIDAL DOS REIS",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "17/01/2014"
-                },
-                {
-                    "name": "MABIANE DE CASSIA PEREIRA",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "20/06/2022"
-                },
-                {
-                    "name": "REGIANE SOARES CASTRO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "22/07/2024"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0001466291",
-            "unid": "UBS NOVA ERA",
-            "area": "NOVA ERA I",
-            "members": [
-                {
-                    "name": "ALICE MARIANO DE SA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "22/07/2024"
-                },
-                {
-                    "name": "ELAINE MARQUES ALVES LEAL",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "05/02/2019"
-                },
-                {
-                    "name": "MARCILENE PEREIRA DE OLIVEIRA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/02/2025"
-                },
-                {
-                    "name": "ANA CAROLINE DA SILVA LOPES",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "08/02/2022"
-                },
-                {
-                    "name": "MILANE HELEN SOUZA DE OLIVEIRA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "22/07/2024"
-                },
-                {
-                    "name": "ROSALIA APARECIDA DA SILVA",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "19/03/2012"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0001466305",
-            "unid": "UBS NOVA ERA",
-            "area": "NOVA ERA II",
-            "members": [
-                {
-                    "name": "ADRIANE CRISTINA RIBEIRO",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/10/2025"
-                },
-                {
-                    "name": "RAQUEL CRISTIANE MENEGATI",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "05/02/2014"
-                },
-                {
-                    "name": "VIVIANE APARECIDA LADEIRA DOS",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "ALINE LANDIM FARANI FARIA",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "02/10/2025"
-                },
-                {
-                    "name": "FABIANA FERREIRA COLLA DA SILVA",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "30/03/2022"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002436256",
-            "unid": "UBS NOVA ERA",
-            "area": "ESF NOVA ERA IV",
-            "members": [
-                {
-                    "name": "ANTONIA SANDRA FRANKLIN DE SOUZA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "22/07/2024"
-                },
-                {
-                    "name": "FLAVIA SANTANA DA SILVA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "21/10/2025"
-                },
-                {
-                    "name": "LETICIA DE SOUSA SANTOS",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/10/2024"
-                }
-            ]
-        },
+
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
             "ine": "0002436248",
@@ -798,6 +35,15 @@
                     "start_date": "03/10/2024"
                 },
                 {
+                    "name": "REGINA CELIA DA COSTA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "23/04/2025"
+                },
+                {
                     "name": "MARIA CRISTINA RODRIGUES DA SILVA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
@@ -824,6 +70,15 @@
             "area": "PSF SANTA LUCIA",
             "members": [
                 {
+                    "name": "KARINA FERNANDES DA SILVA DE SOUZA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/02/2025"
+                },
+                {
                     "name": "REBECA MARQUES SILVA MORATORI",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
@@ -842,13 +97,13 @@
                     "start_date": "01/02/2025"
                 },
                 {
-                    "name": "HEITOR AMARAL CAETANO DE CASTRO",
+                    "name": "ALINE DE PAULA RIBEIRO",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "01/10/2025"
+                    "start_date": "22/06/2020"
                 },
                 {
                     "name": "IGOR REZENDE COUTINHO",
@@ -858,6 +113,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "07/07/2025"
+                },
+                {
+                    "name": "NEILA KARLA DA SILVA FERNANDES REIS",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "22/06/2020"
                 }
             ]
         },
@@ -866,14 +130,97 @@
             "ine": "0002471981",
             "unid": "UBS IPIRANGA",
             "area": "ESF ARCO IRIS",
-            "members": []
+            "members": [
+                {
+                    "name": "JAQUELINE FAYER DOS SANTOS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "SAMIA CRISTINA DA SILVA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "ANGELA MARIA BARBOSA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/03/2025"
+                },
+                {
+                    "name": "GABRIELA SANTIAGO DE OLIVEIRA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "15/08/2025"
+                },
+                {
+                    "name": "JULIANA MELO NOMIYA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/11/2024"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
             "ine": "0002472007",
             "unid": "UBS IPIRANGA",
             "area": "ESF RENASCENCA",
-            "members": []
+            "members": [
+                {
+                    "name": "ALINE SILVA MAIA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "29/08/2024"
+                },
+                {
+                    "name": "CLELIA DE JESUS MOREIRA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "08/07/2025"
+                },
+                {
+                    "name": "CAROLINE RUSSI GODINHO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "11/08/2025"
+                },
+                {
+                    "name": "ISABELLA VILLAR AGUIAR",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "13/08/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -891,22 +238,22 @@
                     "start_date": "10/02/2025"
                 },
                 {
-                    "name": "CAROLINE RUSSI GODINHO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
+                    "name": "FABIANA DA SILVA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "05/11/2025"
+                    "start_date": "14/03/2025"
                 },
                 {
-                    "name": "RAMONY ZANOTTI DE ASSIS PEREIRA",
+                    "name": "RAFAELA AMERICO DE OLIVEIRA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "06/11/2025"
+                    "start_date": "01/08/2024"
                 },
                 {
                     "name": "LUIZ ALBERTO MOREIRA DE AMORIM",
@@ -916,6 +263,50 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "28/04/2025"
+                }
+            ]
+        },
+        {
+            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
+            "ine": "0002472015",
+            "unid": "UBS IPIRANGA",
+            "area": "ESF SAO GERALDO",
+            "members": [
+                {
+                    "name": "IMACULADA CONCEICAO DE SOUZA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "ARTHUR GONCALVES DOS SANTOS",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "12/08/2025"
+                },
+                {
+                    "name": "ROSANA LOPES REGINO",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "ANA CAROLINA MOREIRA ASSUMPCAO",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "27/08/2025"
                 }
             ]
         },
@@ -944,6 +335,15 @@
                     "start_date": "01/08/2024"
                 },
                 {
+                    "name": "ISABELLA LUSVARDI DO PINHO MELLADO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/09/2025"
+                },
+                {
                     "name": "RODRIGO DE MARTIN ALMEIDA",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -970,13 +370,13 @@
                     "start_date": "10/03/2025"
                 },
                 {
-                    "name": "LUCAS AMBROSIO DA SILVA",
+                    "name": "LUCIENE DA SILVA OLIVEIRA",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "05/11/2025"
+                    "start_date": "01/08/2024"
                 },
                 {
                     "name": "NATALIA CORREA PEREIRA",
@@ -1005,57 +405,31 @@
                     "start_date": "10/02/2025"
                 },
                 {
-                    "name": "ROSANA LOPES REGINO",
+                    "name": "GABRIAINE DE ALMEIDA",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "05/11/2025"
+                    "start_date": "07/07/2025"
                 },
                 {
                     "name": "WENDELL COSTA BAZILIO",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
-                    "hours": 40,
+                    "hours": 0,
                     "microarea": 0,
-                    "other": 0,
+                    "other": 40,
                     "start_date": "02/07/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002546833",
-            "unid": "UBS SAO PEDRO",
-            "area": "ESF SANTANA",
-            "members": [
-                {
-                    "name": "WILLIAN LOURENCO SIMOES DA COSTA",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/10/2025"
                 },
                 {
-                    "name": "RAFAELA MARIA DE LIMA DUARTE",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "name": "MATIAS EMANUEL ASCONA ESTIGARRIBIA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "01/09/2025"
-                },
-                {
-                    "name": "LIGIA MARIA DE FREITAS CARVALHO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "07/10/2025"
+                    "start_date": "10/03/2025"
                 }
             ]
         },
@@ -1066,22 +440,58 @@
             "area": "ESF CAICARAS",
             "members": [
                 {
-                    "name": "RAFAELA AMERICO DE OLIVEIRA",
+                    "name": "GABRIELA MATIAS CLEMENTE DOS SANTOS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/10/2024"
+                },
+                {
+                    "name": "WILLIAN LOURENCO SIMOES DA COSTA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "27/08/2024"
+                },
+                {
+                    "name": "RAFAELA MARIA DE LIMA DUARTE",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "LIGIA MARIA DE FREITAS CARVALHO",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "23/10/2025"
+                    "start_date": "19/02/2025"
                 },
                 {
-                    "name": "LEONARDO ANTONIO DOS SANTOS",
+                    "name": "JOANA DARC APARECIDA SIQUEIRA NEIVA",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "27/10/2025"
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "MARIA APARECIDA SIQUEIRA ROMUALDO",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
                 }
             ]
         },
@@ -1110,13 +520,13 @@
                     "start_date": "05/09/2025"
                 },
                 {
-                    "name": "AMANDA FERREIRA DE ARAUJO",
+                    "name": "JUSSARA APARECIDA SARAIVA DOS",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "30/09/2025"
+                    "start_date": "10/10/2024"
                 },
                 {
                     "name": "TATIANA RAMOS FONSECA",
@@ -1136,13 +546,22 @@
             "area": "ESF JARDIM MARAJOARA",
             "members": [
                 {
-                    "name": "FERNANDO GONCALVES FERREIRA",
+                    "name": "CLAUDIA LEANDRA ALVES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "LUCILENE AMARAL",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "06/10/2025"
+                    "start_date": "25/03/2025"
                 },
                 {
                     "name": "PRISCILA RODRIGUES CARDOSO",
@@ -1251,6 +670,15 @@
                     "start_date": "19/02/2024"
                 },
                 {
+                    "name": "AMANDA FERREIRA DE ARAUJO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "25/03/2025"
+                },
+                {
                     "name": "FELIPE BAIAO GASPAR",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -1267,6 +695,24 @@
             "unid": "UBS SAO PEDRO",
             "area": "PSF SAO PEDRO",
             "members": [
+                {
+                    "name": "ANA MARIA PILATI GOMES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "30/05/2016"
+                },
+                {
+                    "name": "MARCELA MUNCK",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "09/12/2024"
+                },
                 {
                     "name": "MATEUS PINTO FERREIRA MEDEIROS",
                     "cbo": "515105",
@@ -1348,13 +794,13 @@
                     "start_date": "03/09/2025"
                 },
                 {
-                    "name": "ANA BEATRIZ SAAR SANTOS",
+                    "name": "KAREN BARROS DE ALMEIDA E SILVA",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "03/11/2025"
+                    "start_date": "01/08/2024"
                 }
             ]
         },
@@ -1407,7 +853,44 @@
             "ine": "0002471639",
             "unid": "UBS BORBOLETA",
             "area": "ESF BORBOLETA IV",
-            "members": []
+            "members": [
+                {
+                    "name": "WEVERTON DE OLIVEIRA MACEDO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "DENES MARTINS DA SILVA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/07/2025"
+                },
+                {
+                    "name": "CAROLINA DA SILVEIRA CARMO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "ADARCH MARIA LOPES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -1478,15 +961,6 @@
                     "start_date": "01/08/2024"
                 },
                 {
-                    "name": "CRISTIANE DE OLIVEIRA BRANDAO",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "08/10/2025"
-                },
-                {
                     "name": "WALLACE FERREIRA DA SILVA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
@@ -1511,7 +985,53 @@
             "ine": "0002471876",
             "unid": "UBS DOM BOSCO",
             "area": "ESF DOM BOSCO II",
-            "members": []
+            "members": [
+                {
+                    "name": "FABRICIO DA SILVA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "ROSANA ESTEVES ALVES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "13/05/2025"
+                },
+                {
+                    "name": "MAURO CESAR DE OLIVEIRA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "CRISTINA GONCALVES DA SILVA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "ANDREA NORA DE SOUZA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -1605,7 +1125,7 @@
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
             "ine": "0002471922",
             "unid": "UBS ESPLANADA",
-            "area": "ESF FABRICA",
+            "area": "ESF MARIANO",
             "members": [
                 {
                     "name": "FELIPE HENRIQUE SIMOES",
@@ -1647,9 +1167,53 @@
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
+            "ine": "0002471914",
+            "unid": "UBS ESPLANADA",
+            "area": "ESF BERNARDO",
+            "members": [
+                {
+                    "name": "PABLO REIS ZIMMERMANN",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "ANDERSON MARCO DE SOUZA ALIANI",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "09/06/2025"
+                },
+                {
+                    "name": "JULY EMANUELLE FONSECA DOSE",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/07/2025"
+                },
+                {
+                    "name": "RITA DE CASSIA GODINHO GUIMARAES REIS",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/03/2025"
+                }
+            ]
+        },
+        {
+            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
             "ine": "0002471906",
             "unid": "UBS ESPLANADA",
-            "area": "ESF ESPLANADA I",
+            "area": "ESF ESPLANADA",
             "members": [
                 {
                     "name": "ANDREW CRUZ GOMES CONCEICAO",
@@ -1700,32 +1264,6 @@
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
-            "ine": "0002471914",
-            "unid": "UBS ESPLANADA",
-            "area": "ESF ESPLANADA II",
-            "members": [
-                {
-                    "name": "PABLO REIS ZIMMERMANN",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2024"
-                },
-                {
-                    "name": "ANDERSON MARCO DE SOUZA ALIANI",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "09/06/2025"
-                }
-            ]
-        },
-        {
-            "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
             "ine": "0001561022",
             "unid": "UBS VALE VERDE",
             "area": "SAGRADO CORACAO DE",
@@ -1738,6 +1276,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "01/01/2015"
+                },
+                {
+                    "name": "HELENICE MORAES PINTO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/07/2024"
                 },
                 {
                     "name": "LUCIMAR ALVES DA SILVA",
@@ -1855,15 +1402,6 @@
                     "start_date": "25/06/2011"
                 },
                 {
-                    "name": "HELENICE MORAES PINTO",
-                    "cbo": "515105",
-                    "role": "AGENTE COMUNITARIO DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "07/11/2025"
-                },
-                {
                     "name": "FRANCIANE PETTERMANN CORREIA DE",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
@@ -1906,7 +1444,44 @@
             "ine": "0002432846",
             "unid": "UBS VALE VERDE",
             "area": "ESF SAGRADO",
-            "members": []
+            "members": [
+                {
+                    "name": "GILMARA DOS SANTOS ALVES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "03/06/2024"
+                },
+                {
+                    "name": "MARCIO LUIZ CORREA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "LAFAYETTE DOUGLAS DA SILVA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "MARIA LUIZA PINTO ANDRE",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -2021,9 +1596,27 @@
                     "start_date": "01/08/2024"
                 },
                 {
+                    "name": "ALEXSANDRA ARRUDA BARROSO CHAVES",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "24/06/2025"
+                },
+                {
                     "name": "AYLLA CORREA GONCALVES",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "RENATA DE OLIVEIRA EZEQUIEL SANTOS",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
@@ -2107,6 +1700,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "01/08/2024"
+                },
+                {
+                    "name": "GEORGE ROMMEL MUYLAERT DE AZEVEDO",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "15/04/2025"
                 }
             ]
         },
@@ -2116,6 +1718,15 @@
             "unid": "UBS CENTRO SUL",
             "area": "ESF CENTRO SUL III",
             "members": [
+                {
+                    "name": "LUANA APARECIDA DE OLIVEIRA GUEDES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
                 {
                     "name": "ISABELLA BERTELLI CORREA",
                     "cbo": "223505",
@@ -2133,6 +1744,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "15/07/2025"
+                },
+                {
+                    "name": "RAIMUNDA SELMA DE OLIVEIRA ANSELMO",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
                 }
             ]
         },
@@ -2284,6 +1904,15 @@
             "area": "PSF GRANJAS BETHEL",
             "members": [
                 {
+                    "name": "ROGERIA DE LOURDES FORTES MIRANDA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "05/12/2006"
+                },
+                {
                     "name": "VIVIAN DA CRUZ MARIANO",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
@@ -2291,15 +1920,6 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "29/05/2007"
-                },
-                {
-                    "name": "ELYELISON REIS DE ALMEIDA",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "07/10/2025"
                 },
                 {
                     "name": "ELAINE CRISTINA SANTOS BARBOSA",
@@ -2318,6 +1938,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "29/08/2023"
+                },
+                {
+                    "name": "FERNANDA CARDOSO DA SILVA",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/01/2014"
                 }
             ]
         },
@@ -2433,6 +2062,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "01/09/2025"
+                },
+                {
+                    "name": "MARIA CLARA DE QUEIROZ PEREIRA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/10/2024"
                 }
             ]
         },
@@ -2574,7 +2212,53 @@
             "ine": "0002433850",
             "unid": "UBS MARUMBI PSF",
             "area": "ESF CORTE DE PEDRA",
-            "members": []
+            "members": [
+                {
+                    "name": "ANTONIA ZILDA DE OLIVEIRA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "ROSELI MARIA BAZILIO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "KELLY ADRIANA FERRARI",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "25/04/2025"
+                },
+                {
+                    "name": "ARIANNE CARDOZO BUENO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "22/03/2025"
+                },
+                {
+                    "name": "PRISCILA DE OLIVEIRA REZENDE SOARES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "15/04/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -2885,6 +2569,15 @@
                     "start_date": "17/03/2025"
                 },
                 {
+                    "name": "WILMA LUCIA PEREIRA RANGEL BRAGA DE",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "06/06/2025"
+                },
+                {
                     "name": "VALERIA SILVA DIBO",
                     "cbo": "223405",
                     "role": "FARMACEUTICO",
@@ -2901,6 +2594,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "05/08/2025"
+                },
+                {
+                    "name": "CARLILSOM JOSE DE OLIVEIRA",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/07/2014"
                 }
             ]
         },
@@ -2910,6 +2612,15 @@
             "unid": "UBS JACUTINGA PSF",
             "area": "PSF JACUTINGA",
             "members": [
+                {
+                    "name": "APARECIDA DOS SANTOS RIBEIRO GUEDES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "16/01/2007"
+                },
                 {
                     "name": "LEILA APARECIDA DE OLIVEIRA CARMO",
                     "cbo": "515105",
@@ -3026,6 +2737,15 @@
                     "start_date": "01/08/2015"
                 },
                 {
+                    "name": "PATRICIA APARECIDA CANEDO DE ALMEIDA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/07/2015"
+                },
+                {
                     "name": "LISANDRA ALVIM KELER",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
@@ -3033,6 +2753,24 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "19/02/2025"
+                },
+                {
+                    "name": "MARIA TEREZA AGUIAR CASTILHO NETA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "29/02/2024"
+                },
+                {
+                    "name": "FELIPE DE CARVALHO MOREIRA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "13/11/2020"
                 }
             ]
         },
@@ -3156,7 +2894,44 @@
             "ine": "0002199254",
             "unid": "UBS SANTOS DUMONT",
             "area": "ESF NOVO HORIZONTE",
-            "members": []
+            "members": [
+                {
+                    "name": "EDNA APARECIDA LUIZ DE ASSIS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "20/07/2021"
+                },
+                {
+                    "name": "LUCIANA APARECIDA DE SOUZA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "27/08/2025"
+                },
+                {
+                    "name": "VANDERLEIA SOELI DE BARROS ZAMPIER",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "21/07/2021"
+                },
+                {
+                    "name": "MARIA ELISA PINTO COLEN",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "20/07/2021"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -3190,6 +2965,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "17/07/2025"
+                },
+                {
+                    "name": "RENATA DA SILVA DE JESUS",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/10/2024"
                 },
                 {
                     "name": "LETICIA REGINA DOS SANTOS",
@@ -3260,7 +3044,44 @@
             "ine": "0002432897",
             "unid": "UBS TEIXEIRAS PSF",
             "area": "ESF ALTO BELA AURORA",
-            "members": []
+            "members": [
+                {
+                    "name": "FERNANDA DE SOUZA ALMADA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "CASSIA DA SILVA MENDES CUSTODIO",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "FLAVIA FERNANDES DORNELAS",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "08/07/2025"
+                },
+                {
+                    "name": "MARIA CLARA TOME OLIVEIRA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -3418,6 +3239,24 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "02/10/2023"
+                },
+                {
+                    "name": "MARIA POLLYANNA ALCANTARA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/01/2025"
+                },
+                {
+                    "name": "VANDA ELIZABETH DE PAULA SILVA",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/11/2011"
                 }
             ]
         },
@@ -3686,6 +3525,15 @@
                     "start_date": "19/02/2025"
                 },
                 {
+                    "name": "GIANNI PIRES DUQUE SALES",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
                     "name": "LAIS RODRIGUES MAIA",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -3730,15 +3578,6 @@
                     "start_date": "01/07/2025"
                 },
                 {
-                    "name": "SIMONE FONSECA DE ALMEIDA",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/11/2025"
-                },
-                {
                     "name": "LUCIA HELENA NOVELLINO PEREIRA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
@@ -3753,8 +3592,17 @@
                     "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
-                    "other": 0,
+                    "other": 20,
                     "start_date": "11/11/2022"
+                },
+                {
+                    "name": "BEATRIZ SCALDINI",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/03/2015"
                 }
             ]
         },
@@ -3852,6 +3700,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "02/07/2025"
+                },
+                {
+                    "name": "PEDRO HENRIQUE DE OLIVEIRA TEIXEIRA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "04/08/2025"
                 }
             ]
         },
@@ -3869,6 +3726,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "19/02/2024"
+                },
+                {
+                    "name": "WILSON DA SILVA SIQUEIRA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "30/07/2025"
                 },
                 {
                     "name": "DENISE NAGEM VALERIO DE OLIVEIRA",
@@ -3957,6 +3823,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "08/09/2023"
+                },
+                {
+                    "name": "MARY LUCIA DE CASTRO CRUZ CARVALHO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/01/2014"
                 },
                 {
                     "name": "NATALIA MOREIRA HALFELD",
@@ -4091,6 +3966,33 @@
             "area": "PSF SANTA RITA I",
             "members": [
                 {
+                    "name": "MARIA DE FATIMA DE ASSIS SILVA LIMA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/01/2007"
+                },
+                {
+                    "name": "VALERIA CRISTINA DE OLIVEIRA CAMPOS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/02/2014"
+                },
+                {
+                    "name": "DANIELE DE CARVALHO BENEDITO MENDES",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "12/08/2024"
+                },
+                {
                     "name": "SAVIO FERNANDES NEVES",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -4124,6 +4026,33 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "18/01/2007"
+                },
+                {
+                    "name": "NILZA CRISTINA DO NASCIMENTO SOUZA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/01/2007"
+                },
+                {
+                    "name": "ROSEMERY ALMEIDA FERNANDES GOMES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/01/2007"
+                },
+                {
+                    "name": "THAISE APARECIDA GONCALVES COELHO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/07/2025"
                 },
                 {
                     "name": "ISABELLA PEREIRA DE SOUSA",
@@ -4170,31 +4099,13 @@
                     "start_date": "01/08/2024"
                 },
                 {
-                    "name": "JOSEMARA DA SILVA AGOSTINHO",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "20/10/2025"
-                },
-                {
-                    "name": "LUCILENE DE ALMEIDA SILVA BRAZ",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "13/10/2025"
-                },
-                {
-                    "name": "ANA LIVIA NOGUEIRA MONTEIRO",
+                    "name": "ALINE LANDIM FARANI FARIA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "02/10/2025"
+                    "start_date": "06/06/2025"
                 },
                 {
                     "name": "ANA LUIZA PAES DA SILVEIRA",
@@ -4301,6 +4212,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "10/12/2006"
+                },
+                {
+                    "name": "EMANUELLY PRISCILA DORINI DE MORAES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "22/08/2022"
                 }
             ]
         },
@@ -4373,13 +4293,13 @@
                     "start_date": "19/02/2025"
                 },
                 {
-                    "name": "RILZA BARBOSA TEIXEIRA DA ROCHA",
+                    "name": "MARCELLA ROCHA TEIXEIRA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "01/10/2025"
+                    "start_date": "02/07/2025"
                 },
                 {
                     "name": "NATHALIA FREIRE LOPES DE LIMA",
@@ -4411,6 +4331,15 @@
                     "name": "SIRLEY DE FATIMA CORREA",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/07/2025"
+                },
+                {
+                    "name": "LUIZ GUILHERME MERCINE CERQUEIRA LIMA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
@@ -4486,6 +4415,24 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "23/01/2007"
+                },
+                {
+                    "name": "DAIANA APARECIDA DE AGUIAR SILVA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "ELIANE APARECIDA VASCONCELOS GOMES",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "27/05/2024"
                 },
                 {
                     "name": "MARINA NATALIA DE ASSIS E OLIVEIRA",
@@ -4592,6 +4539,42 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "08/02/2019"
+                },
+                {
+                    "name": "SIMONE BRAZ DE FREITAS SANTOS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/01/2007"
+                },
+                {
+                    "name": "PALOMA ABREU LIMA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/02/2025"
+                },
+                {
+                    "name": "MICHELLE ESTEVES MIRANDA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/12/2022"
+                },
+                {
+                    "name": "PAULA DELGADO MACHADO HENRIQUES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "13/09/2023"
                 }
             ]
         },
@@ -4655,6 +4638,15 @@
             "area": "PSF BOM JARDIM II",
             "members": [
                 {
+                    "name": "ELOISA CRISTINA CAGNIM FERREIRA LEITE",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/09/2007"
+                },
+                {
                     "name": "RAFAEL FERREIRA MIRANDA",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
@@ -4715,7 +4707,53 @@
             "ine": "0002432706",
             "unid": "UBS SANTA LUZIA PSF",
             "area": "ESF JARDIM PRIMAVERA",
-            "members": []
+            "members": [
+                {
+                    "name": "SANDRA MARIA VIEIRA ANTONIO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "22/03/2024"
+                },
+                {
+                    "name": "FABIANA MOREIRA MARTINS",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "24/04/2025"
+                },
+                {
+                    "name": "FABIANA ELISA RAMIM REIS",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "24/04/2025"
+                },
+                {
+                    "name": "LETICIA FAGUNDES DE CARVALHO",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "24/04/2025"
+                },
+                {
+                    "name": "PRISCILA FERNANDA NERY DE SOUZA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "28/07/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -4760,6 +4798,15 @@
                     "start_date": "30/08/2025"
                 },
                 {
+                    "name": "ROMULO MUNIZ SILVA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "11/01/2023"
+                },
+                {
                     "name": "CLAUDIO MOISES LACERDA REIS",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -4802,6 +4849,24 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "02/09/2025"
+                },
+                {
+                    "name": "GEORGIA ANDREIA DE CARVALHO CASTRO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "24/04/2025"
+                },
+                {
+                    "name": "ADRIELE MEYER PIRES FEITOSA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "30/06/2025"
                 }
             ]
         },
@@ -4810,7 +4875,62 @@
             "ine": "0001466321",
             "unid": "UBS SANTA LUZIA PSF",
             "area": "PSF SANTA LUZIA",
-            "members": []
+            "members": [
+                {
+                    "name": "ALESSANDRA APARECIDA ALVES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "05/01/2021"
+                },
+                {
+                    "name": "GISLAYNE RIBEIRO TEIXEIRA VIEIRA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "16/01/2007"
+                },
+                {
+                    "name": "MICHELLE BERNARDO DE CASTRO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "16/01/2007"
+                },
+                {
+                    "name": "JUSSARA ALBINO DE PAULA CONCEICAO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/07/2022"
+                },
+                {
+                    "name": "JULIA LOBATO DE FREITAS OLIVEIRA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "30/08/2019"
+                },
+                {
+                    "name": "KATIA REGINA FERREIRA DOS SANTOS",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "11/06/2018"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -4818,6 +4938,15 @@
             "unid": "UBS SANTA LUZIA PSF",
             "area": "PSF JARDIM DE ALA",
             "members": [
+                {
+                    "name": "MARIA CRISTINA TAVARES DE CARVALHO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
                 {
                     "name": "MARIA STELA APARECIDA TEODORO",
                     "cbo": "515105",
@@ -4970,13 +5099,13 @@
                     "start_date": "30/06/2025"
                 },
                 {
-                    "name": "HAROLDO RIBEIRO DE ALMEIDA",
+                    "name": "NATHALIA MILVA FEITAL BURATO",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "01/10/2025"
+                    "start_date": "24/04/2025"
                 }
             ]
         },
@@ -4997,6 +5126,15 @@
                 },
                 {
                     "name": "ENEIDA MARQUES ASSIS DE ALMEIDA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "KELLEN CRISTINA DE PAULA",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
@@ -5110,15 +5248,6 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "19/02/2025"
-                },
-                {
-                    "name": "KAREN BARROS DE ALMEIDA E SILVA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "29/10/2025"
                 }
             ]
         },
@@ -5253,6 +5382,24 @@
                     "start_date": "05/02/2014"
                 },
                 {
+                    "name": "IMACULADA DA CONCEICAO MAGALHAES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "05/06/2008"
+                },
+                {
+                    "name": "WANDELURDES CONCEICAO APARECIDA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "23/02/2024"
+                },
+                {
                     "name": "JOAO WILLIAM DE PAULO MESSIAS",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
@@ -5260,6 +5407,24 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "05/06/2017"
+                },
+                {
+                    "name": "HEMILENE GOMES DE CARVALHO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2016"
+                },
+                {
+                    "name": "PRISCILLA RODRIGUES SAGGIORO",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "12/01/2023"
                 }
             ]
         },
@@ -5332,6 +5497,15 @@
                     "start_date": "03/06/2024"
                 },
                 {
+                    "name": "TATIANE MOREIRA DE AVELLAR BECCARI",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "04/09/2023"
+                },
+                {
                     "name": "JUNIOR DE OLIVEIRA PAULA",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
@@ -5350,13 +5524,13 @@
                     "start_date": "14/04/2025"
                 },
                 {
-                    "name": "CRISTIA ROSINEIRI GONCALVES LOPES",
+                    "name": "FAUSTO PEREIRA DE ALMEIDA JUNIOR",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "02/10/2025"
+                    "start_date": "01/08/2024"
                 }
             ]
         },
@@ -5365,7 +5539,62 @@
             "ine": "0000252336",
             "unid": "UBS SANTA CRUZ I PSF",
             "area": "PSF SANTA CRUZ",
-            "members": []
+            "members": [
+                {
+                    "name": "ADRIANA MARCIA LOREFICE",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "16/01/2000"
+                },
+                {
+                    "name": "ESTER MARIA DA SILVA LOPES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/09/2007"
+                },
+                {
+                    "name": "SIMONE BERTANTE DA SILVA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/09/2007"
+                },
+                {
+                    "name": "ELIZANGELA MARIA DA SILVA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "29/04/2024"
+                },
+                {
+                    "name": "PALOMA DE PAIVA AGUIAR",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "07/07/2025"
+                },
+                {
+                    "name": "ARIANNY HELLEN DE OLIVEIRA SOARES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -5478,7 +5707,62 @@
             "ine": "0000252328",
             "unid": "UBS SANTA CRUZ I PSF",
             "area": "PSF VILA MELLO REIS",
-            "members": []
+            "members": [
+                {
+                    "name": "KARINA DE SOUZA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "03/06/2024"
+                },
+                {
+                    "name": "MARIA FILOMENA DA SILVA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/09/2007"
+                },
+                {
+                    "name": "ROSA HELENA DA SILVA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/09/2007"
+                },
+                {
+                    "name": "CARLOS EDUARDO MAGALHAES",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "14/04/2025"
+                },
+                {
+                    "name": "DENISE GONCALVES MAZONI",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "13/04/2021"
+                },
+                {
+                    "name": "LUCAS DA PAZ FERNANDES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/03/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -5514,13 +5798,13 @@
                     "start_date": "19/02/2024"
                 },
                 {
-                    "name": "PEDRO HENRIQUE DE CASTRO OLIVEIRA",
+                    "name": "LIDIA ELIETE COSTA PATRICIO DE OLIVEIRA",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "08/10/2025"
+                    "start_date": "13/08/2025"
                 },
                 {
                     "name": "DAYANA ALVES GARCIA DE ALMEIDA",
@@ -5548,6 +5832,33 @@
             "unid": "UBS SAO BENEDITO PSF",
             "area": "ESF PARQUE BELA VISTA",
             "members": [
+                {
+                    "name": "ROSENEIDE APARECIDA COSTA MARQUINI",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "ROSILENE DE SOUZA CAMPOS DE PAULA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "SANDER ZACARIAS GOMES DOS SANTOS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
                 {
                     "name": "ADRIA MAYARA FELIZARDO DOS ANJOS",
                     "cbo": "322230",
@@ -5655,6 +5966,24 @@
                     "start_date": "22/04/2013"
                 },
                 {
+                    "name": "ROSANGELA APARECIDA COSTA CAMPOS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "SANDRA APARECIDA VICENTE DE OLIVEIRA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "06/12/2006"
+                },
+                {
                     "name": "TANIA MARCIA SILVEIRA CARLOS",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
@@ -5667,6 +5996,15 @@
                     "name": "FLAVIA ALVES CONDE PIRES GUELBER",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "MARIA APARECIDA MANTIOLHE MARTINS",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
@@ -5867,13 +6205,13 @@
                     "start_date": "13/05/2025"
                 },
                 {
-                    "name": "DANIELA SOUTO",
+                    "name": "INGRID ISIDORO PORTO",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "06/10/2025"
+                    "start_date": "13/08/2024"
                 }
             ]
         },
@@ -6052,6 +6390,15 @@
             "area": "ESF ROSARIO",
             "members": [
                 {
+                    "name": "MARIA DO ROSARIO NASCIMENTO ALVES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2023"
+                },
+                {
                     "name": "PAULA DE VASCONCELOS FREIRE",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
@@ -6114,22 +6461,13 @@
                     "start_date": "01/08/2024"
                 },
                 {
-                    "name": "ANA PAULA DE PAIVA COSTA",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "13/10/2025"
-                },
-                {
-                    "name": "NATALIA VIEIRA SENHORINHO",
+                    "name": "CAROLINA GOMES DE ASSIS",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "14/10/2025"
+                    "start_date": "25/08/2025"
                 },
                 {
                     "name": "THAYANE CARVALHO LOURENCO",
@@ -6192,6 +6530,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "16/09/2025"
+                },
+                {
+                    "name": "LUDMILA SATHLER TAVARES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
                 }
             ]
         },
@@ -6324,7 +6671,53 @@
             "ine": "0001558773",
             "unid": "UBS BAIRRO INDUSTRIAL",
             "area": "CERAMICA",
-            "members": []
+            "members": [
+                {
+                    "name": "MARCELO OVIDIO VICENTE",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "05/11/2014"
+                },
+                {
+                    "name": "WESLLEY ARAO HIGINO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "05/11/2014"
+                },
+                {
+                    "name": "LUDIMILA FORTUNATO RIBEIRO DE CASTRO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "03/08/2025"
+                },
+                {
+                    "name": "MARCOS ITABORAHY FAGUNDES NETTO",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "20/07/2023"
+                },
+                {
+                    "name": "MARIA DO ROSARIO FERREIRA CABRAL",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/02/2023"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -6333,7 +6726,16 @@
             "area": "INDUSTRIAL",
             "members": [
                 {
-                    "name": "ELISANGELA MOREIRA DOS SANTOS",
+                    "name": "ANDREIA APARECIDA TERRA DE ALMEIDA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "05/11/2014"
+                },
+                {
+                    "name": "ELISANGELA MOREIRA SANTOS DO CARMO",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
                     "hours": 40,
@@ -6428,7 +6830,53 @@
             "ine": "0002434733",
             "unid": "UBS BAIRRO INDUSTRIAL",
             "area": "ESF ESMERALDA",
-            "members": []
+            "members": [
+                {
+                    "name": "JOSIANE MARCIANO RAMOS DE OLIVEIRA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "25/08/2025"
+                },
+                {
+                    "name": "PATRICIA APARECIDA DA SILVA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "VIRGINIA MARA MACHADO",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "25/04/2025"
+                },
+                {
+                    "name": "LUIZA APARECIDA DE OLIVEIRA GUEDES",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "MARINA ROSA CAMPOS DE ANDRADE",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -6532,7 +6980,62 @@
             "ine": "0000252581",
             "unid": "UBS SANTA CECILIA PSF",
             "area": "PSF MUNDO NOVO",
-            "members": []
+            "members": [
+                {
+                    "name": "PRISCILA MARIA DE ALMEIDA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "11/03/2004"
+                },
+                {
+                    "name": "REGINA CELIA ABRITA GONCALVES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "20/01/2014"
+                },
+                {
+                    "name": "SHIRLEI DO CARMO TAVARES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "20/08/2003"
+                },
+                {
+                    "name": "ELIZABETH DE OLIVEIRA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "29/07/2019"
+                },
+                {
+                    "name": "GISELE DA CRUZ FERREIRA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/02/2023"
+                },
+                {
+                    "name": "MARISA SATHLER BREDER MORAES DE",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/04/2015"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -6637,6 +7140,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "01/12/2022"
+                },
+                {
+                    "name": "MAURILIO APPOLONIO DOS REIS JUNIOR",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "15/09/2011"
                 }
             ]
         },
@@ -6646,6 +7158,24 @@
             "unid": "UBS SANTO ANTONIO PSF",
             "area": "ESF CENTRAL",
             "members": [
+                {
+                    "name": "ANDREA DA MOTTA CAIAFA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "22/04/2024"
+                },
+                {
+                    "name": "ELAINE FERREIRA VEIGA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
                 {
                     "name": "MARIA MEDEIROS",
                     "cbo": "515105",
@@ -6663,6 +7193,24 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "22/04/2024"
+                },
+                {
+                    "name": "MARCIA APARECIDA NASCIMENTO ALVES",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/09/2025"
+                },
+                {
+                    "name": "JUSSARA NERIS DO NASCIMENTO E SILVA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "14/04/2025"
                 },
                 {
                     "name": "YURI AUGUSTO PITA SILVA PINTO",
@@ -6920,6 +7468,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "31/10/2019"
+                },
+                {
+                    "name": "ISABEL DA SILVA SANTOS VASCONCELOS",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "08/08/2016"
                 }
             ]
         },
@@ -7036,6 +7593,15 @@
             "area": "ESF SANTA CANDIDA II",
             "members": [
                 {
+                    "name": "DENISE DE ALCANTARA ALMEIDA COSTA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
                     "name": "ELIANE DE SOUZA DA SILVA",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
@@ -7061,15 +7627,6 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "29/04/2025"
-                },
-                {
-                    "name": "VIVIANE MUNIZ MONTEIRO",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "06/10/2025"
                 }
             ]
         },
@@ -7123,6 +7680,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "10/05/2013"
+                },
+                {
+                    "name": "ELSILENE APARECIDA CLARIMUNDO",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/09/2013"
                 }
             ]
         },
@@ -7140,6 +7706,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "20/07/2020"
+                },
+                {
+                    "name": "UMBELINA DOMINGOS FERREIRA DELPHINO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "23/06/2008"
                 },
                 {
                     "name": "URSULA DA SILVA ESTEVES",
@@ -7228,7 +7803,44 @@
             "ine": "0002476207",
             "unid": "UBS MONTE CASTELO PSF",
             "area": "ESF PARQUE DAS",
-            "members": []
+            "members": [
+                {
+                    "name": "GISELLE DE SOUZA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "LUCAS COSTA DA SILVA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "ERIKA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "09/07/2025"
+                },
+                {
+                    "name": "LAENE ALECIA PASTORI DE FARIA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -7341,7 +7953,53 @@
             "ine": "0000252263",
             "unid": "UBS MONTE CASTELO PSF",
             "area": "PSF MONTE CASTELO",
-            "members": []
+            "members": [
+                {
+                    "name": "CAROLINA MORAIS COSTA SILVERIO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "LUIZ CARLOS FERNANDES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/01/2007"
+                },
+                {
+                    "name": "BRUNA MARIA DE NAZARETH PINHEIRO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/01/2024"
+                },
+                {
+                    "name": "FLAVIA LAZZARINI",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "28/07/2022"
+                },
+                {
+                    "name": "SANDRA PEREIRA SANTOS DA SILVA",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "03/02/2010"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -7430,6 +8088,15 @@
                     "start_date": "19/02/2024"
                 },
                 {
+                    "name": "MARIA APARECIDA DOS SANTOS FERREIRA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
                     "name": "MARIA ALICE",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
@@ -7463,7 +8130,44 @@
             "ine": "0002434717",
             "unid": "UBS SANTA EFIGENIA PSF",
             "area": "ESF SANTA EFIGENIA II",
-            "members": []
+            "members": [
+                {
+                    "name": "VALDIRENE RODRIGUES VENANCIO ASSIS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "JANAINA FERREIRA DE OLIVEIRA",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "25/09/2025"
+                },
+                {
+                    "name": "SANISE LIVIA CARDOSO BATISTA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "VERONICA DE MOURA FERREIRA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "22/05/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -7508,6 +8212,15 @@
                     "start_date": "29/05/2007"
                 },
                 {
+                    "name": "NATALIA GALEGO GUIMARAES WERNECK",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/11/2016"
+                },
+                {
                     "name": "MARIA DO CARMO BATISTA",
                     "cbo": "322205",
                     "role": "TECNICO DE ENFERMAGEM",
@@ -7550,6 +8263,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "11/08/2025"
+                },
+                {
+                    "name": "VALDILANE APARECIDA NUNES DE MOURA",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/03/2020"
                 }
             ]
         },
@@ -7585,6 +8307,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "19/02/2024"
+                },
+                {
+                    "name": "REINILSON SANTOS SILVEIRA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "03/10/2024"
                 }
             ]
         },
@@ -7611,6 +8342,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "03/10/2024"
+                },
+                {
+                    "name": "ROSANA DE ALMEIDA RIBEIRO SANTIAGO",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/07/2025"
                 },
                 {
                     "name": "MARIA CRISTINA DA COSTA E SILVA",
@@ -7664,15 +8404,6 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "03/10/2024"
-                },
-                {
-                    "name": "SANNY ALVES HENRIQUES",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "13/10/2025"
                 }
             ]
         },
@@ -7726,6 +8457,24 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "19/02/2025"
+                },
+                {
+                    "name": "MICHELE ESTEVES DOS ANJOS",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/06/2023"
+                },
+                {
+                    "name": "BRENO VITOR DA SILVA REIS",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "07/07/2025"
                 }
             ]
         },
@@ -7840,21 +8589,141 @@
             "ine": "0000251968",
             "unid": "UBS ALTO DO GRAJAU PSF",
             "area": "PSF GRAJAU",
-            "members": []
+            "members": [
+                {
+                    "name": "EVANIR APARECIDA FERNANDES DA SILVA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/11/2024"
+                },
+                {
+                    "name": "MARILDA ANDRE DOS SANTOS MARTINS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "20/01/2014"
+                },
+                {
+                    "name": "MEIRIANGELA SICONELLI DE AZEVEDO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/07/2024"
+                },
+                {
+                    "name": "SILVANA XAVIER HESPANHOL",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "27/11/2007"
+                },
+                {
+                    "name": "ELISETE BITTENCOURT DA SILVA PIRES",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/10/2022"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
             "ine": "0000251941",
             "unid": "UBS ALTO DO GRAJAU PSF",
             "area": "PSF ALTO TRES",
-            "members": []
+            "members": [
+                {
+                    "name": "GILCE FERREIRA DALVAS CYPRIANO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/07/2024"
+                },
+                {
+                    "name": "MARISIA DAS GRACAS DOS REIS",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "JULIANA SCHULTZ DE FREITAS",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/07/2025"
+                },
+                {
+                    "name": "YGOR FELIPE LEITE DE SOUZA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "28/04/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
             "ine": "0002433656",
             "unid": "UBS JOQUEI CLUBE I PSF",
             "area": "ESF CLUBE HIPICO",
-            "members": []
+            "members": [
+                {
+                    "name": "MADALENA MARIA FERREIRA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "FRANCISLAYNE DE SOUZA REIS",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "JOAO GABRIEL DOS SANTOS",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "LARYSSA DE SA BRAGANCA GONCALVES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "08/09/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -7893,10 +8762,28 @@
                     "name": "JULIANA ALVES DA FONSECA",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 0,
+                    "microarea": 0,
+                    "other": 40,
+                    "start_date": "26/08/2025"
+                },
+                {
+                    "name": "LAIS DE VASCONCELLOS SERRANO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "26/08/2025"
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "RUTHINA AUGUSTA OLIVEIRA DA ROCHA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "23/06/2025"
                 }
             ]
         },
@@ -8022,22 +8909,31 @@
                     "start_date": "19/02/2024"
                 },
                 {
-                    "name": "ANA CAROLINA MARIANO AMORIM",
+                    "name": "CARLA DE ASSIS MOREIRA",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "06/10/2025"
+                    "start_date": "16/09/2024"
                 },
                 {
-                    "name": "JULY EMANUELLE FONSECA DOSE",
+                    "name": "RAMONY ZANOTTI DE ASSIS PEREIRA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "07/11/2025"
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "RAFAEL HOMSI",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
                 }
             ]
         },
@@ -8049,6 +8945,15 @@
             "members": [
                 {
                     "name": "ANA MARIA DIAS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "12/12/2006"
+                },
+                {
+                    "name": "LOURDES APARECIDA DA SILVA CASTILHO",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
                     "hours": 40,
@@ -8137,13 +9042,13 @@
                     "start_date": "19/11/2007"
                 },
                 {
-                    "name": "ANDERSON JOSE DA SILVA",
+                    "name": "RENATA PIANTA RIBEIRO RODRIGUES",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "16/10/2025"
+                    "start_date": "26/06/2023"
                 },
                 {
                     "name": "ANNA CARLA KNOP DE MENDONCA",
@@ -8153,6 +9058,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "28/08/2024"
+                },
+                {
+                    "name": "THAYNA DE ANDRADE ROMEU ALEXANDRE",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
                 }
             ]
         },
@@ -8161,7 +9075,44 @@
             "ine": "0002433818",
             "unid": "UBS SAO JUDAS TADEU PSF",
             "area": "ESF SAO FRANCISCO",
-            "members": []
+            "members": [
+                {
+                    "name": "MARCIA CRISTINA DE AQUINO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2024"
+                },
+                {
+                    "name": "ANDREA DE OLIVEIRA SILVA MATEUS",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/07/2025"
+                },
+                {
+                    "name": "ANDREIA FERNANDES DOS SANTOS",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/07/2025"
+                },
+                {
+                    "name": "MILLENA FREIRE ALVARENGA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/09/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -8200,6 +9151,15 @@
                     "name": "ARIANE COSTA SOUZA DE OLIVEIRA",
                     "cbo": "322230",
                     "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "04/01/2022"
+                },
+                {
+                    "name": "PRISCILA SANCHES AQUINO DE OLIVEIRA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
@@ -8250,6 +9210,15 @@
                     "start_date": "07/11/2024"
                 },
                 {
+                    "name": "DIONATHA CRISTIAN CORDEIRO DE ARAUJO",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "30/06/2025"
+                },
+                {
                     "name": "GIOVANNA AMARAL LOPES",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -8265,7 +9234,62 @@
             "ine": "0001466194",
             "unid": "UBS JOQUEI CLUBE II PSF",
             "area": "ESF JOQUEI CLUBE III",
-            "members": []
+            "members": [
+                {
+                    "name": "KATIA HELENA DE SOUZA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "16/01/2007"
+                },
+                {
+                    "name": "MARCELA DA SILVA AGUIAR",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "07/11/2024"
+                },
+                {
+                    "name": "MONALIZA ENRIQUES DA SILVA ROSA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "07/11/2024"
+                },
+                {
+                    "name": "LETICIA MARA DOS SANTOS BRAGA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "02/12/2019"
+                },
+                {
+                    "name": "GRACE KELLY RIBEIRO VITOR",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/02/2023"
+                },
+                {
+                    "name": "LILIAN CRISTINA FILIPINO",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "24/05/2007"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -8416,6 +9440,15 @@
                     "start_date": "19/02/2024"
                 },
                 {
+                    "name": "CAMILO NOGUEIRA AZARIAS",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "21/08/2025"
+                },
+                {
                     "name": "LETICIA CASSIA DE OLIVEIRA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
@@ -8504,6 +9537,15 @@
                     "start_date": "19/02/2024"
                 },
                 {
+                    "name": "MARGARETH LINHARES PRESSATO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "07/07/2008"
+                },
+                {
                     "name": "NEYDE BELEI PRIAMO",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
@@ -8557,6 +9599,15 @@
             "area": "PSF JARDIM",
             "members": [
                 {
+                    "name": "ANDREIA MARIA DOS SANTOS MACHADO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "06/12/2006"
+                },
+                {
                     "name": "CAIK DAMASCENO FRANCK",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
@@ -8564,6 +9615,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "07/07/2025"
+                },
+                {
+                    "name": "MARIA GORETTI ZANCANELLA BARBOZA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "06/12/2006"
                 },
                 {
                     "name": "IRANI BATISTA BERNARDO NOGUEIRA",
@@ -8601,6 +9661,15 @@
             "area": "ESF VILA OLAVO COSTA",
             "members": [
                 {
+                    "name": "MARIA DE FATIMA RODRIGUES DE FREITAS",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "31/10/2023"
+                },
+                {
                     "name": "PATRICIA CARLA DA SILVA",
                     "cbo": "515105",
                     "role": "AGENTE COMUNITARIO DE",
@@ -8628,22 +9697,13 @@
                     "start_date": "20/11/2023"
                 },
                 {
-                    "name": "AMANDA DE ALMEIDA SALES",
+                    "name": "ANA ISIS SILVA MENDONCA",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "03/10/2025"
-                },
-                {
-                    "name": "JULIO CESAR DIAZ GONZALEZ",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/10/2025"
+                    "start_date": "24/02/2025"
                 },
                 {
                     "name": "ZAIRA ALVES GONCALVES",
@@ -8688,6 +9748,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "14/04/2025"
+                },
+                {
+                    "name": "LUCIMARA KELLY DE CASTRO OLIVEIRA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "15/01/2018"
                 },
                 {
                     "name": "LUCAS PEREIRA DE CARVALHO",
@@ -8801,7 +9870,7 @@
                     "role": "TECNICO DE ENFERMAGEM",
                     "hours": 0,
                     "microarea": 0,
-                    "other": 0,
+                    "other": 40,
                     "start_date": "15/08/2025"
                 }
             ]
@@ -8856,6 +9925,15 @@
             "unid": "UBS FURTADO DE MENEZES PSF",
             "area": "PSF VILA FURTADO DE",
             "members": [
+                {
+                    "name": "DANIELE APARECIDA MATTOS DE CASTRO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "22/04/2013"
+                },
                 {
                     "name": "LUCIA CRISTINA DA SILVA HONORATO",
                     "cbo": "515105",
@@ -9025,6 +10103,15 @@
                     "start_date": "22/06/2020"
                 },
                 {
+                    "name": "VICTORIO EURICO CAMPRA BUSTAMANTE",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/02/2025"
+                },
+                {
                     "name": "JOAO CESAR LAGE NASSARALLA",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -9087,15 +10174,6 @@
                     "start_date": "19/02/2025"
                 },
                 {
-                    "name": "RAQUEL LIQUER DE DEUS",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "07/11/2025"
-                },
-                {
                     "name": "JOAO PEDRO COELHO FIGUEIREDO",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -9112,6 +10190,15 @@
             "unid": "UBS NOSSA SENHORA APARECIDA",
             "area": "ESF SAO CAMILO DE",
             "members": [
+                {
+                    "name": "ELIANE MARIA DE FATIMA PAULA RIBEIRO",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "26/03/2024"
+                },
                 {
                     "name": "JANAINA MARA FERREIRA SILVA",
                     "cbo": "515105",
@@ -9143,6 +10230,15 @@
                     "name": "JULIANO HIGINO ALVES DE SOUZA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "19/02/2025"
+                },
+                {
+                    "name": "GABRIELA PEREIRA RODARTE",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
@@ -9193,13 +10289,31 @@
                     "start_date": "17/01/2007"
                 },
                 {
-                    "name": "ALEXSANDRO MAGNO DA SILVA",
+                    "name": "RAQUEL LIQUER DE DEUS",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "07/11/2025"
+                    "start_date": "04/08/2022"
+                },
+                {
+                    "name": "AMANDA DE ALMEIDA SALES",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "06/08/2025"
+                },
+                {
+                    "name": "WALDIR RIBEIRO JORGE",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "08/03/2021"
                 },
                 {
                     "name": "EDILANE CARNEIRO COUTO",
@@ -9288,7 +10402,35 @@
             "ine": "0002472139",
             "unid": "UBS NOSSA SENHORA DAS GRACAS",
             "area": "ESF EPAMIG",
-            "members": []
+            "members": [
+                {
+                    "name": "DANIEL CRUZ MAGALHAES",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/10/2024"
+                },
+                {
+                    "name": "JOAO ALBERTO MARTINS",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "MICHAEL GARCIA DA SILVA",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -9315,13 +10457,13 @@
                     "start_date": "01/08/2024"
                 },
                 {
-                    "name": "NATHALIA CRISTINA DA SILVA",
+                    "name": "NATALIA VIEIRA SENHORINHO",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "02/10/2025"
+                    "start_date": "16/07/2025"
                 },
                 {
                     "name": "ANA CAROLINA DE OLIVEIRA MARTINS",
@@ -9359,13 +10501,13 @@
                     "start_date": "01/08/2024"
                 },
                 {
-                    "name": "CAMILA DO CARMO QUINTILIANO",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "name": "FRANCIANE MARTINS RUDGERO AMORIM",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
                     "hours": 40,
                     "microarea": 0,
                     "other": 0,
-                    "start_date": "06/10/2025"
+                    "start_date": "16/07/2025"
                 },
                 {
                     "name": "VITORIA LEITE SILVA",
@@ -9383,7 +10525,44 @@
             "ine": "0002472090",
             "unid": "UBS NOSSA SENHORA DAS GRACAS",
             "area": "ESF VISTA ALEGRE",
-            "members": []
+            "members": [
+                {
+                    "name": "DIOGO PINTO MENDES VIEIRA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "ERICA MARIA DOS SANTOS",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "DIANE BATISTA CAMPOS DE SOUZA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "MARIA CLARA TEIXEIRA BICALHO",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -9399,15 +10578,6 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "01/08/2024"
-                },
-                {
-                    "name": "JAQUELINE VALERIO TEIXEIRA MARIANO",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/10/2025"
                 },
                 {
                     "name": "RUAN TEIXEIRA LESSA",
@@ -9524,6 +10694,15 @@
                     "start_date": "01/08/2024"
                 },
                 {
+                    "name": "JOYCE BARROS FERNANDES MARTON DE",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
                     "name": "CARLA CAROLINE PLACIDES PEREIRA",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -9594,15 +10773,6 @@
                     "start_date": "19/09/2024"
                 },
                 {
-                    "name": "NATHANIE THAIS DE OLIVEIRA",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/10/2025"
-                },
-                {
                     "name": "CECILIA FRANCISCA DE AGUINEL NETA",
                     "cbo": "223505",
                     "role": "ENFERMEIRO",
@@ -9671,7 +10841,35 @@
             "ine": "0002471760",
             "unid": "UBS NOSSA SENHORA DE LOURDES",
             "area": "ESF COSTA CARVALHO I",
-            "members": []
+            "members": [
+                {
+                    "name": "RODRIGO COELHO GASPAR",
+                    "cbo": "322230",
+                    "role": "AUXILIAR DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/08/2024"
+                },
+                {
+                    "name": "LETYCIA NEVES MARTINS",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "13/08/2025"
+                },
+                {
+                    "name": "MARINA NOGUEIRA HENRIQUES DE",
+                    "cbo": "225142",
+                    "role": "MEDICO DA ESTRATEGIA DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "13/08/2025"
+                }
+            ]
         },
         {
             "name": "ESF - EQUIPE DE SAUDE DA FAMILIA",
@@ -9705,6 +10903,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "15/07/2025"
+                },
+                {
+                    "name": "MARIA NATALINA DAS GRACAS FERREIRA",
+                    "cbo": "322205",
+                    "role": "TECNICO DE ENFERMAGEM",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "01/09/2025"
                 }
             ]
         },
@@ -9821,6 +11028,15 @@
                     "start_date": "01/10/2013"
                 },
                 {
+                    "name": "LUCINEIA FILGUEIRAS BATISTA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/01/2007"
+                },
+                {
                     "name": "THAIS DA CUNHA BARROS",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -9846,6 +11062,15 @@
             "unid": "UBS VALE DOS BANDEIRANTES PSF",
             "area": "PSF SERRA PELADA",
             "members": [
+                {
+                    "name": "CAROLINE SILVA PINTO DE SOUZA",
+                    "cbo": "515105",
+                    "role": "AGENTE COMUNITARIO DE",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "17/01/2007"
+                },
                 {
                     "name": "CIMERE DIAS DOS SANTOS",
                     "cbo": "515105",
@@ -10086,6 +11311,15 @@
                     "start_date": "27/09/2016"
                 },
                 {
+                    "name": "ELIZABETH ARAUJO BOTTO DE OLIVEIRA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "18/09/2020"
+                },
+                {
                     "name": "HENRIQUE RESENDE RODRIGUES",
                     "cbo": "225142",
                     "role": "MEDICO DA ESTRATEGIA DE",
@@ -10146,6 +11380,15 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "23/11/2006"
+                },
+                {
+                    "name": "JOSEANE BRAGA DE SOUZA",
+                    "cbo": "223505",
+                    "role": "ENFERMEIRO",
+                    "hours": 40,
+                    "microarea": 0,
+                    "other": 0,
+                    "start_date": "10/03/2025"
                 },
                 {
                     "name": "LETICIA DE SOUZA PEDRO",
@@ -10235,222 +11478,6 @@
                     "microarea": 0,
                     "other": 0,
                     "start_date": "19/02/2025"
-                },
-                {
-                    "name": "PRICILLA APARECIDA RAMOS DA SILVA",
-                    "cbo": "251605",
-                    "role": "ASSISTENTE SOCIAL",
-                    "hours": 30,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "25/09/2025"
-                },
-                {
-                    "name": "ANDRE CID DE ARAUJO",
-                    "cbo": "223605",
-                    "role": "FISIOTERAPEUTA GERAL",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "18/12/2024"
-                },
-                {
-                    "name": "RAFAELA MORONE GOMES",
-                    "cbo": "223605",
-                    "role": "FISIOTERAPEUTA GERAL",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/09/2025"
-                },
-                {
-                    "name": "JOAO LUIS BARLETTA",
-                    "cbo": "223710",
-                    "role": "NUTRICIONISTA",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "02/06/2025"
-                },
-                {
-                    "name": "LARISSA STROPPA GONCALVES",
-                    "cbo": "223710",
-                    "role": "NUTRICIONISTA",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "01/08/2025"
-                },
-                {
-                    "name": "JOYCE OLIVEIRA PINTO CAMPOS",
-                    "cbo": "251605",
-                    "role": "ASSISTENTE SOCIAL",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "15/09/2025"
-                },
-                {
-                    "name": "ISABEL CRISTINA NEVES DE PAULA",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "26/12/2023"
-                },
-                {
-                    "name": "SABRINA PINTO PIRES DA SILVA",
-                    "cbo": "322230",
-                    "role": "AUXILIAR DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "08/10/2024"
-                },
-                {
-                    "name": "VANESSA CELLES MOREIRA",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "26/12/2023"
-                },
-                {
-                    "name": "MARIA LUZIA FERREIRA",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "26/12/2023"
-                },
-                {
-                    "name": "WANDERSON REINILDO DA SILVA",
-                    "cbo": "515310",
-                    "role": "AGENTE DE ACAO SOCIAL",
-                    "hours": 30,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "21/08/2025"
-                },
-                {
-                    "name": "PAULA MIRANDA DE OLIVEIRA",
-                    "cbo": "251605",
-                    "role": "ASSISTENTE SOCIAL",
-                    "hours": 32,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "26/11/2018"
-                },
-                {
-                    "name": "BARBARA DE SA MENEZES TEIXEIRA",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "30/09/2021"
-                },
-                {
-                    "name": "MARCELO DOS SANTOS CAMPOS",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "26/11/2019"
-                },
-                {
-                    "name": "ALINE DE PAULA RIBEIRO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/10/2025"
-                },
-                {
-                    "name": "JOSEMAR MARTINS",
-                    "cbo": "225170",
-                    "role": "MEDICO GENERALISTA",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "05/11/2020"
-                },
-                {
-                    "name": "TATIANE CRISTINA DE SOUZA",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "05/11/2020"
-                },
-                {
-                    "name": "JACQUELINE STELA NOGUEIRA",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "05/11/2020"
-                },
-                {
-                    "name": "KARLA AZEVEDO WERNER",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "27/06/2023"
-                },
-                {
-                    "name": "MARIA JOSE DE CASTRO CHRISTOVAM",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 40,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/10/2022"
-                },
-                {
-                    "name": "ALINE DE PAULA RIBEIRO",
-                    "cbo": "223505",
-                    "role": "ENFERMEIRO",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "03/10/2025"
-                },
-                {
-                    "name": "JOSEMAR MARTINS",
-                    "cbo": "225142",
-                    "role": "MEDICO DA ESTRATEGIA DE",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "08/09/2020"
-                },
-                {
-                    "name": "EVELINE APARECIDA CASEMIRO",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "07/04/2020"
-                },
-                {
-                    "name": "TATIANE CRISTINA DE SOUZA",
-                    "cbo": "322205",
-                    "role": "TECNICO DE ENFERMAGEM",
-                    "hours": 20,
-                    "microarea": 0,
-                    "other": 0,
-                    "start_date": "07/04/2020"
                 }
             ]
         }
