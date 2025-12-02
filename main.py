@@ -1,3 +1,4 @@
+from difflib import SequenceMatcher
 from pathlib import Path
 import unicodedata
 from selenium import webdriver
@@ -11,6 +12,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import json
 import time
+from rapidfuzz import fuzz, process
 
 
 import os
@@ -66,23 +68,36 @@ def carregar_dados_times(caminho):
 
 
 
-
-def inserir( espera, action, id_campo, valor,campo_id,controle = False):
+def inserir(espera, action, id_campo, valor, campo_id, controle=False):
     try:
         print(f"➡️ Esperando o campo '{campo_id}' ser clicável")
-        campo_id_element = espera.until(EC.element_to_be_clickable((By.ID,campo_id)))
-        time.sleep(1)
+        campo_id_element = espera.until(EC.element_to_be_clickable((By.ID, campo_id)))
+        time.sleep(0.4)
         campo_id_element.clear()
-        time.sleep(1)
+        time.sleep(0.4)
         print(f"✅ Campo {campo_id} clicado")
-
-
 
         print(f"➡️ Esperando o campo '{id_campo}' ser clicável")
         campo = espera.until(EC.visibility_of_element_located((By.ID, id_campo)))
         action.move_to_element(campo).click().send_keys(valor).perform()
-        time.sleep(1)
-        
+        time.sleep(0.4)
+
+        try:
+            no_results = espera.until(
+                EC.presence_of_element_located((
+                    By.CSS_SELECTOR,
+                    "ul.select2-results li.select2-no-results"
+                ))
+            )
+
+            print(f"❌ Nenhum resultado encontrado para '{valor}'. Pulando...")
+            return False
+
+        except TimeoutException:
+            pass
+
+        # -------------------------------------
+
         if controle:
             texto = campo.find_element(By.CSS_SELECTOR, ".select2-chosen").text.strip()
 
@@ -108,21 +123,25 @@ def inserir( espera, action, id_campo, valor,campo_id,controle = False):
 
                 if not clicou:
                     print(f"❌ Opção '{valor}' não encontrada na lista.")
+                    return False
 
             except TimeoutException:
-                # Se o dropdown não aparecer, pode ser que o campo tenha sido preenchido automaticamente
                 texto_atual = campo.find_element(By.CSS_SELECTOR, ".select2-chosen").text.strip()
                 if texto_atual == valor:
                     print("✅ O valor foi preenchido automaticamente (sem abrir o dropdown).")
                 else:
                     print(f"⚠️ O dropdown não apareceu e o valor ainda não é '{valor}'.")
+                    return False
         else:
             print(f"✅ '{valor}' já estava selecionado.")
-            
+
         print("✅ Inserção concluída")
         time.sleep(1)
+        return True 
+
     except Exception as e:
-        print(f"Não foi impossivel inserir o campo  {id_campo} devido {e}")
+        print(f"Não foi impossível inserir o campo {id_campo} devido {e}")
+        return False
 
 
 
@@ -175,6 +194,7 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
     else:
         times = dados
         for i,team in enumerate(times):
+            print(f"Equipe - {team["area"]} , {i + 1}  de {len(times)}")
             temp_team = team
             inserir(
                 espera=espera,
@@ -188,7 +208,7 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
                 action=action,
                 id_campo="s2id_esf_area_profissional_id_segmento",
                 campo_id="lookup_key_esf_area_profissional_id_segmento",
-                valor="URBANO",
+                valor=team["segmento"],
             )   
 
             inserir(
@@ -199,6 +219,8 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
                 valor=team["unid"],
             )
 
+              
+
             inserir(
                 espera=espera,
                 action=action,
@@ -208,7 +230,10 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
                 controle=True
             )
 
+       
+
             time.sleep(1)
+
             print("➡️ Esperando botão pesquisar")
             btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
             action.move_to_element(btn_search).click().perform()
@@ -227,57 +252,28 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
 
             except Exception as e:
                 print("Select não Encontrado")
-            verificar_medico_adicionando(espera=espera,action=action,dados=team["members"],temp_team=temp_team)
-            # verificar_medico_deletando(espera=espera,action=action,dados=team["members"],temp_team=temp_team)
+            verificar_medico_deletando(driver=driver,espera=espera,action=action,dados=team["members"],temp_team=temp_team)
+            # verificar_medico_adicionando(driver=driver,espera=espera,action=action,dados=team["members"])
   
 
     
 
 
 
-def verificar_medico_deletando( espera, action, dados,temp_team):
+def verificar_medico_deletando(driver, espera, action, dados,temp_team):
     valores = []
 
     time.sleep(1)
-    try:
-        # Tenta achar a tabela
-        table = espera.until(EC.visibility_of_element_located((By.ID, "esf_area_profissional_datatable")))
-        print("Tabela encontrada! Extraindo dados...")
 
-        tbody = table.find_element(By.TAG_NAME, "tbody")
-        linhas = tbody.find_elements(By.TAG_NAME, "tr")
-
-        for linha in linhas:
-            colunas = linha.find_elements(By.TAG_NAME, "td")
-
-            # Linha de "nenhum resultado"
-            if len(colunas) == 1 and "Não foram encontrados resultados" in colunas[0].text:
-                print("Equipe sem médicos (tabela vazia)")
-                break
-
-            # Evitar erro de índice
-            if len(colunas) <= 9:
-                print("⚠ Linha ignorada (menos de 10 colunas)")
-                continue
-
-            valores.append(colunas[9].text)
-
-    except Exception as e:
-        print("Nenhuma tabela encontrada. Tentando extrair dados do card...")
-        valor = espera.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".select2-chosen"))).text
-        print("Apenas um registro disponível. Selecionado automaticamente:", valor)
-        valores.append(valor)
-    finally:
-        print("Medicos no Pronto: ")
-        print(valores)
+    medicos_na_tela = extrair_medicos_da_tabela(espera,driver)
 
 
-        for pessoa in valores:
-            encontrado = any(fuzz.ratio( normalizar(pessoa), normalizar(cnes["name"])) > 80 for cnes in dados)
+    for pessoa in medicos_na_tela:
+        encontrado = any(mesma_pessoa(pessoa, cnes["name"]) for cnes in dados)
         
-            if not encontrado:
-                print(f"O médico {pessoa} não está mais no CNES — deletando...")
-                deletar_medico_equipe(espera=espera,medico=pessoa,actions=action,temp_team=temp_team)
+        if not encontrado:
+            print(f"O médico {pessoa} não está mais no CNES — deletando...")
+            deletar_medico_equipe(espera=espera,medico=pessoa,actions=action,temp_team=temp_team)
     
     print("Deletado menbros não cadastrado no CNES")
         
@@ -296,7 +292,7 @@ def deletar_medico_equipe(espera,medico,actions,temp_team):
             td = espera.until(EC.visibility_of_element_located((By.XPATH, f"//table[@id='esf_area_profissional_datatable']//td[normalize-space(text())='{medico}']")))        
             actions.double_click(td).perform()
         except:
-            print("Entrei No except")
+            print("Ta em card")
 
             
         time.sleep(1)
@@ -320,7 +316,7 @@ def deletar_medico_equipe(espera,medico,actions,temp_team):
                 action=actions,
                 id_campo="s2id_esf_area_profissional_id_segmento",
                 campo_id="lookup_key_esf_area_profissional_id_segmento",
-                valor="URBANO",
+                valor=temp_team["segmento"],
             )   
 
             inserir(
@@ -349,18 +345,128 @@ def deletar_medico_equipe(espera,medico,actions,temp_team):
     
     except Exception as e:
         print(f"Falha ao deletar o medico {medico}")           
-        
 
 
-def verificar_medico_adicionando( espera, action, dados,temp_team):
-    valores = []
-    medicos_add = []
+def mesma_pessoa(a, b):
+    a_norm = normalizar(a)
+    b_norm = normalizar(b)
 
+    pa = a_norm.split()
+    pb = b_norm.split()
+
+    menor, maior = (pa, pb) if len(pa) <= len(pb) else (pb, pa)
+
+    if all(p in maior for p in menor):
+        return True
+
+    score = fuzz.ratio(a_norm, b_norm)
+    return score >= 85
+
+def nomes_sao_mesma_pessoa(n1, n2):
+    n1 = normalizar(n1)
+    n2 = normalizar(n2)
+
+    # Se iguais
+    if n1 == n2:
+        return True
+
+    p1 = n1.split()
+    p2 = n2.split()
+
+    if all(p in p1 for p in p2):
+        return True
+    if all(p in p2 for p in p1):
+        return True
+
+    if SequenceMatcher(None, n1, n2).ratio() >= 0.80:
+        return True
+
+    inter = set(p1) & set(p2)
+    if len(inter) >= 3:  
+        return True
+
+    return False
+
+def nomes_similares(n1, n2):
+    # São exatamente iguais
+    if n1 == n2:
+        return True
+    
+    # Um é prefixo do outro
+    if n1.startswith(n2) or n2.startswith(n1):
+        return True
+    
+    # Quebrar em partes
+    p1 = n1.split()
+    p2 = n2.split()
+    
+    # Se só o último sobrenome é diferente → considerar igual
+    if p1[:-1] == p2 or p2[:-1] == p1:
+        return True
+    
+    # Comparar primeiro e penúltimo sobrenome
+    if p1[0] == p2[0]:
+        if len(p1) > 1 and len(p2) > 1:
+            if p1[-2] == p2[-2]:
+                return True
+    
+    return False
+
+
+def verificar_medico_adicionando(driver, espera, action, dados):
+    medicos_na_tela = extrair_medicos_da_tabela(driver,espera)
+    nomes_cnes = {normalizar(item["name"]) for item in dados}
+
+    faltando_nomes = []
+
+    for nome in nomes_cnes:
+        achou = any(nomes_similares(nome, m) for m in medicos_na_tela)
+        if not achou:
+            faltando_nomes.append(nome)
+
+    faltando_no_pronto = []
+
+    for item in dados:
+        nome_original = item["name"]
+        nome_normalizado = normalizar(nome_original)
+
+        if nome_normalizado in faltando_nomes:
+            faltando_no_pronto.append({
+                "nome": nome_original,
+                "role": item.get("role"),
+            })
+
+    if faltando_no_pronto:
+        print("\n🔍 Médicos encontrados no CNES mas não no Pronto:")
+        for nome in faltando_no_pronto:
+            print(f" - {nome}")
+    else:
+        print("\n✅ Nenhum médico faltando.")
+
+    cancelar_tabela(espera, action)
+    if(len(faltando_no_pronto) != 0):
+        adicionar_medico_equipe(
+            driver=driver,
+            espera=espera,
+            action=action,
+            lista_add=list(faltando_no_pronto)
+        )
+    else:
+        print( " 🧑‍🤝‍🧑 SEM MEDICOS A SEREM ADICIONADOS")
+
+
+def extrair_medicos_da_tabela(espera,driver):
+    """Tenta extrair os nomes dos médicos da tabela.
+       Se não existir tabela, extrai do card select2."""
+    
     time.sleep(1)
+    valores = set()
+
     try:
-        # Tenta achar a tabela
-        table = espera.until(EC.visibility_of_element_located((By.ID, "esf_area_profissional_datatable")))
-        print("Tabela encontrada! Extraindo dados...")
+        table = espera.until(
+            EC.visibility_of_element_located((By.ID, "esf_area_profissional_datatable"))
+        )
+        print("📄 Tabela encontrada! Extraindo dados...")
 
         tbody = table.find_element(By.TAG_NAME, "tbody")
         linhas = tbody.find_elements(By.TAG_NAME, "tr")
@@ -368,108 +474,191 @@ def verificar_medico_adicionando( espera, action, dados,temp_team):
         for linha in linhas:
             colunas = linha.find_elements(By.TAG_NAME, "td")
 
-            # Linha de "nenhum resultado"
+            # Linha vazia
             if len(colunas) == 1 and "Não foram encontrados resultados" in colunas[0].text:
-                print("Equipe sem médicos (tabela vazia)")
+                print("⚠ Equipe sem médicos cadastrados.")
                 break
 
-            # Evitar erro de índice
+            # Linha invalida
             if len(colunas) <= 9:
                 print("⚠ Linha ignorada (menos de 10 colunas)")
                 continue
 
-            valores.append(colunas[9].text)
+            valores.add(normalizar(colunas[9].text))
 
+    except Exception:
+        print("⚠ Nenhuma tabela encontrada. Extraindo do card...")
+        nome_card = espera.until(
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#s2id_esf_area_profissional_id_profissional .select2-chosen"))
+        ).text
+
+        valores.add(normalizar(nome_card))
+
+        print(f"✅ Apenas um registro encontrado: {nome_card}")
+
+    return valores
+
+
+def cancelar_tabela(espera, action):
+    """Clica no botão cancelar da tabela."""
+    print("➡️ Cancelando tabela...")
+    try:
+        btn_cancel = espera.until(
+            EC.element_to_be_clickable((By.ID, "esf_area_profissional_cancel"))
+        )
+        action.move_to_element(btn_cancel).click().perform()
+        print("✅ Cancelado com sucesso.\n")
     except Exception as e:
-        print("Nenhuma tabela encontrada. Tentando extrair dados do card...")
-        valor = espera.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".select2-chosen"))).text
-        print("Apenas um registro disponível. Selecionado automaticamente:", valor)
-        valores.append(valor)
-    finally:
-        print("Medicos no Pronto: ")
-        print(valores)
+        print(f"❌ Erro ao clicar em cancelar: {e}")
+
+def existe_erro_na_navbar(driver):
+    try:
+        return driver.find_element(By.XPATH, "//p[contains(text(), 'Por favor, corrija os erros')]")
+    except:
+        return None
 
 
-  # Lista de nomes do CNES normalizados
-    nomes_cnes = {normalizar for item in dados}
+def adicionar_medico_equipe(driver, espera, action, lista_add):
 
-    # Lista de nomes do pronto normalizados
-    nomes_pronto = {normalizar(p) for p in valores}
+    time.sleep(1)
+    print("➡️ Abrindo formulário de Inserção...")
+    click_btn_inserir(espera, action)
 
-    # Médicos que estão no CNES mas não no pronto
-    faltando_no_pronto = nomes_cnes - nomes_pronto
+    processados = []
+    print(f"📌 Médicos a serem adicionados: {lista_add}")
+    time.sleep(1)
 
-    for nome in faltando_no_pronto:
-        print(f"O médico {nome} está no CNES mas não no pronto!")
+    for medico in lista_add:
+        print(f"\n➡️ Adicionando médico: {medico}")
+        try:
+            ok =  inserir(
+                espera=espera,
+                action=action,
+                id_campo="s2id_esf_area_profissional_id_profissional",
+                campo_id="lookup_key_esf_area_profissional_id_profissional",
+                valor=medico["nome"]
+            )
 
+            if not ok:
+                print(f"⚠️ Pulando médico '{medico["nome"]}' (não encontrado)")
+                matrix_medico_erro.append(medico)
+                continue
+
+            else:
+                print("✅ Médico inserido no input.")
+
+                ok2 = inserir(
+                    espera=espera,
+                    action=action,
+                    id_campo="s2id_esf_area_profissional_id_especialidade",
+                    campo_id="loup_key_esf_area_profissional_id_especialidade",
+                    valor=medico["role"]
+                )
+
+                if not ok2:
+                    print(f"⚠️ Medico sem Este CBO '{medico["role"]}' (não encontrado)")
+                    matrix_medico_erro.append(medico)
+                    continue
+                else:
+                    time.sleep(0.4)  
+                    erro = existe_erro_na_navbar(driver)
+
+                    if erro:
+                        print("❌ Erro detectado na navbar!")
+                        print("➤ Adicionando médico na lista de erros...")
+                        matrix_medico_erro.append(medico)
+
+                        # fecha o alerta para não atrapalhar
+                        try:
+                            fechar = driver.find_element(By.CSS_SELECTOR, ".fwk-navbar-danger .close")
+                            fechar.click()
+                        except:
+                            pass
+
+                        continue 
+
+                    time.sleep(0.4)
+                    salvar_profissional(espera, action)
+                    processados.append(medico)
+
+        except Exception as e:
+            print(f"❌ Erro ao processar {medico}: {e}")
+            matrix_medico_erro.append(medico)
+        finally:
+            time.sleep(0.4)
+            print(f"\n➡️ Procurando botão de copiar")
+            btn_copy = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_insert_copy")))
+            action.move_to_element(btn_copy).click().perform()
+            print("✅ Botão copiar clicado.")
+
+
+
+
+
+    # Remove da lista os adicionados
+    for nome in processados:
+        if nome in lista_add:
+            lista_add.remove(nome)
+    
+    cancelar_tabela(espera=espera,action=action)  
+    # if aqui
+    time.sleep(0.4)
+
+     # 🔍 Tenta encontrar o modal "Atenção"
+    try:
+        modal = espera.until(
+            EC.visibility_of_element_located((
+                By.CSS_SELECTOR,
+                "div.modal-dialog div.modal-content"
+            ))
+        )
+
+        print("⚠️ Modal de confirmação encontrado — clicando em SIM...")
+
+        botao_sim = modal.find_element(
+            By.CSS_SELECTOR,
+            "div.modal-footer button.btn-primary"
+        )
+
+        action.move_to_element(botao_sim).click().perform()
+        print("✅ Clique em SIM realizado.")
+
+    except TimeoutException:
+        # Modal NÃO apareceu (fluxo normal)
+        print("➡️ Nenhum modal de confirmação — seguindo fluxo normalmente.")
 
     
-    print("Adicionando menbros  cadastrado no CNES")
+
+
+
+def click_btn_inserir(espera, action):
+    """Clica no botão de inserir dentro da tela."""
+    try:
+        btn_inserir = espera.until(
+            EC.element_to_be_clickable((By.ID, "esf_area_profissional_insert"))
+        )
+        action.move_to_element(btn_inserir).click().perform()
+        print("✅ Botão inserir clicado.")
+    except Exception as e:
+        print(f"❌ Erro ao clicar em inserir: {e}")
+        raise
         
-    time.sleep(1)
-    cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
-    action.move_to_element(cancel).click().perform()
-    time.sleep(1)
-    print("Saindo da Tabela")
-
-# def adicionar_medico_equipe(driver,espera,action,pessoa):
-#     try:
-#         print("-> Cliquei no cancel")
-#         btn_cancel = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_cancel")))
-#         action.move_to_element(btn_cancel).click().perform()
-#         print("-> Cancel Bem Sucedido")
 
 
-#         time.sleep(1)
 
-#         print("-> Esperando o botão inserir")
-#         btn_inserir = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_insert")))
-#         action.move_to_element(btn_inserir).click().perform()
-#         print("-> Botão inserir clicado")
+def salvar_profissional(espera, action):
+    """Clica no botão inserir para salvar o profissional."""
+    try:
+        time.sleep(1)
+        btn_salvar = espera.until(
+            EC.element_to_be_clickable((By.ID, "esf_area_profissional_save"))
+        )
+        action.move_to_element(btn_salvar).click().perform()
+        print("✅ Profissional salvo.")
+    except Exception as e:
+        print(f"❌ Erro ao salvar: {e}")
 
-#         time.sleep(1)
-        
-#         print("-> Inserindo dados do medico")
-#         inserir(espera=espera,action=action,id_campo="s2id_esf_area_profissional_id_profissional",campo_id="lookup_key_esf_area_profissional_id_profissional",valor=pessoa)
-#         print("->Dado Inserido")
-
-#         time.sleep(1)
-#         espera.until(EC.invisibility_of_element_located((By.ID, "select2-drop-mask")))
-#         print("-> Esperando botão salvar")
-#         btn_salvar = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_save")))
-#         action.move_to_element(btn_salvar).click().perform()
-#         print("-> Botão salvar clicado")
-#         time.sleep(1)
-
-#         erro = driver.find_element(By.CSS_SELECTOR, "nav.fwk-navbar-danger")
-
-#         if erro.is_displayed():
-#             matrix_medico_erro.append()
-            
-        
- 
-
-#     except Exception as e:
-#         print(f"Não foi possivel cadastrar o medico {pessoa}")
-#         matrix_medico_erro.append(pessoa)
-        
-#         time.sleep(1)
-#         body = espera.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
-#         body.click()
-
-
-#         print("-> Cliquei no cancel")
-#         btn_cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
-#         action.move_to_element(btn_cancel).click().perform()
-#         print("-> Cancel Bem Sucedido")
-
-#         time.sleep(2)
-    
-#         print("-> Esperando botão pesquisar")
-#         btn_search = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_search")))
-#         action.move_to_element(btn_search).click().perform()
-#         print("-> Botão pesquisar clicado")
-#         time.sleep(1)
+        raise
 
 
 
