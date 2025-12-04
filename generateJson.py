@@ -132,18 +132,13 @@ for line in lines:
             cbo = cbo_raw.split("-")[0].strip()
             role = " ".join(cbo_raw.split("-")[1:]).strip()
 
-            hours = cols[2]["text"]
-            amb = cols[3]["text"]
-            out = cols[4]["text"]
+      
             start_date = cols[5]["text"]
 
             member = {
                 "name": name,
                 "cbo": cbo,
                 "role": role,
-                "hours": hours,
-                "microarea": out,   # posição fixa
-                "other": amb,
                 "start_date": start_date,
             }
 
