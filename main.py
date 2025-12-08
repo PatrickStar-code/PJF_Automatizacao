@@ -14,6 +14,7 @@ import json
 import time
 from rapidfuzz import fuzz, process
 from selenium.common.exceptions import StaleElementReferenceException
+from difflib import SequenceMatcher
 
 
 
@@ -76,6 +77,10 @@ def _normalize_text(s: str) -> str:
     s = "".join(ch for ch in s if not unicodedata.combining(ch))
     return s
 
+
+def similar(a, b):
+    return SequenceMatcher(None, a, b).ratio()
+
 def inserir(espera, action, id_campo, valor, campo_id, controle=False, driver=False):
     try:
         print(f"➡️ Esperando o campo '{campo_id}' ser clicável")
@@ -104,7 +109,7 @@ def inserir(espera, action, id_campo, valor, campo_id, controle=False, driver=Fa
             print("❌ Falha ao recuperar o campo após 3 tentativas")
             return False
 
-        time.sleep(0.4)
+        time.sleep(0.7)
 
         # Verifica se não houve resultados
         try:
@@ -179,8 +184,14 @@ def inserir(espera, action, id_campo, valor, campo_id, controle=False, driver=Fa
                             try:
                                 nome = op.find_element(By.CSS_SELECTOR, "td:nth-child(2)").text.strip().lower()
                                 alvo = valor.strip().lower()
+                                # Ou trocar por
+    #                             if similar(nome[:len(alvo)], alvo) > 0.7:  
+                                    # op.click()
+                                    # clicou = True
+                                    # print(f"🔍 Match aproximado clicado: {nome}")
+                                    # break
 
-                                if nome.endswith(alvo):
+                                if nome.startswith(alvo): # Trocar para startswith
                                     op.click()
                                     clicou = True
                                     print(f"🔍 Match parcial seguro clicado: {nome}")
@@ -215,7 +226,7 @@ def inserir(espera, action, id_campo, valor, campo_id, controle=False, driver=Fa
             return False
 
         print("✅ Inserção concluída")
-        time.sleep(0.4)
+        time.sleep(0.7)
         return True
 
     except Exception as e:
@@ -344,13 +355,13 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
 
        
 
-            time.sleep(0.4)
+            time.sleep(0.7)
 
             print("➡️ Esperando botão pesquisar")
             btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
             action.move_to_element(btn_search).click().perform()
             print("✅ Botão pesquisar clicado")
-            time.sleep(0.4)
+            time.sleep(0.7)
             try:
                 select_element = espera.until(
                     EC.visibility_of_element_located(
@@ -377,7 +388,7 @@ def pesquisar_unidade_por_area(driver, espera, action, dados,iframe):
 def verificar_medico_deletando(driver, espera, action, dados,temp_team):
     valores = []
 
-    time.sleep(0.4)
+    time.sleep(0.7)
 
     medicos_na_tela = extrair_medicos_da_tabela(espera,driver)
 
@@ -391,10 +402,10 @@ def verificar_medico_deletando(driver, espera, action, dados,temp_team):
     
     print("Deletado menbros não cadastrado no CNES")
         
-    time.sleep(0.4)
+    time.sleep(0.7)
     cancel = espera.until(EC.presence_of_element_located((By.ID, "esf_area_profissional_cancel")))
     action.move_to_element(cancel).click().perform()
-    time.sleep(0.4)
+    time.sleep(0.7)
     print("Saindo da Tabela")
 
 
@@ -403,19 +414,22 @@ def verificar_medico_deletando(driver, espera, action, dados,temp_team):
 def deletar_medico_equipe(driver,espera,medico,actions,temp_team):
     try:
         try:
-            td = espera.until(EC.visibility_of_element_located((By.XPATH, f"//table[@id='esf_area_profissional_datatable']//td[normalize-space(text())='{medico}']")))        
+            td = espera.until(EC.visibility_of_element_located((
+                By.XPATH,
+                f"//table[@id='esf_area_profissional_datatable']//td[translate(normalize-space(text()), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') = '{medico.upper()}']"
+            )))
             actions.double_click(td).perform()
         except:
             print("Ta em card")
 
             
-        time.sleep(0.4)
+        time.sleep(0.7)
         btn_excluir = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_delete")))
         actions.move_to_element(btn_excluir).click().perform()
-        time.sleep(0.4)
+        time.sleep(0.7)
         btn_confirmar_exclusao = espera.until(EC.visibility_of_element_located((By.CSS_SELECTOR,".modal-footer .btn.btn-primary.btn-lg")))
         actions.move_to_element(btn_confirmar_exclusao).click().perform()
-        time.sleep(0.4)
+        time.sleep(0.7)
 
         try:
             inserir(
@@ -480,17 +494,18 @@ def deletar_medico_equipe(driver,espera,medico,actions,temp_team):
                     campo_id="lookup_key_esf_area_profissional_id_area",
                     controle=True
                 )
-                time.sleep(0.4)
+                time.sleep(0.7)
 
             btn_search = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_search")))
             actions.move_to_element(btn_search).click().perform()
-            time.sleep(0.4)
+            time.sleep(0.7)
         except Exception as e:
             print(e)
 
     
     except Exception as e:
-        print(f"Falha ao deletar o medico {medico}")           
+        print(f"Falha ao deletar o medico {medico}")      
+        matrix_medico_erro.append(medico)     
 
 
 def mesma_pessoa(a, b):
@@ -605,7 +620,7 @@ def extrair_medicos_da_tabela(espera,driver):
     """Tenta extrair os nomes dos médicos da tabela.
        Se não existir tabela, extrai do card select2."""
     
-    time.sleep(0.4)
+    time.sleep(0.7)
     valores = set()
 
     try:
@@ -666,13 +681,13 @@ def existe_erro_na_navbar(driver):
 
 def adicionar_medico_equipe(driver, espera, action, lista_add):
 
-    time.sleep(0.4)
+    time.sleep(0.7)
     print("➡️ Abrindo formulário de Inserção...")
     click_btn_inserir(espera, action)
 
     processados = []
     print(f"📌 Médicos a serem adicionados: {lista_add}")
-    time.sleep(0.4)
+    time.sleep(0.7)
 
     for medico in lista_add:
         print(f"\n➡️ Adicionando médico: {medico}")
@@ -692,7 +707,7 @@ def adicionar_medico_equipe(driver, espera, action, lista_add):
 
             else:
                 print("✅ Médico inserido no input.")
-                time.sleep(0.4)
+                time.sleep(0.7)
 
                 ok2 = inserir(
                     espera=espera,
@@ -708,7 +723,7 @@ def adicionar_medico_equipe(driver, espera, action, lista_add):
                     matrix_medico_erro.append(medico)
                     continue
                 else:
-                    time.sleep(0.4)  
+                    time.sleep(0.7)  
                     erro = existe_erro_na_navbar(driver)
 
                     if erro:
@@ -725,7 +740,7 @@ def adicionar_medico_equipe(driver, espera, action, lista_add):
 
                         continue 
 
-                    time.sleep(0.4)
+                    time.sleep(0.7)
                     salvar_profissional(espera, action)
                     processados.append(medico)
 
@@ -733,12 +748,12 @@ def adicionar_medico_equipe(driver, espera, action, lista_add):
             print(f"❌ Erro ao processar {medico}: {e}")
             matrix_medico_erro.append(medico)
         finally:
-            time.sleep(0.4)
+            time.sleep(0.7)
             print(f"\n➡️ Procurando botão de copiar")
             btn_copy = espera.until(EC.visibility_of_element_located((By.ID,"esf_area_profissional_insert_copy")))
             action.move_to_element(btn_copy).click().perform()
             print("✅ Botão copiar clicado.")
-            time.sleep(0.4)
+            time.sleep(0.7)
             limpar_campo(espera, "lookup_key_esf_area_profissional_id_especialidade")
 
 
@@ -752,7 +767,7 @@ def adicionar_medico_equipe(driver, espera, action, lista_add):
     
     cancelar_tabela(espera=espera,action=action)  
     # if aqui
-    time.sleep(0.4)
+    time.sleep(0.7)
 
      # 🔍 Tenta encontrar o modal "Atenção"
     try:
@@ -822,13 +837,13 @@ def limpar_campo(espera, campo_id):
 def salvar_profissional(espera, action):
     """Clica no botão inserir para salvar o profissional."""
     try:
-        time.sleep(0.4)
+        time.sleep(0.7)
         btn_salvar = espera.until(
             EC.element_to_be_clickable((By.ID, "esf_area_profissional_save"))
         )
         action.move_to_element(btn_salvar).click().perform()
         print("✅ Profissional salvo.")
-        time.sleep(0.4)
+        time.sleep(0.7)
 
 
     except Exception as e:
